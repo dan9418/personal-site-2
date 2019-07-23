@@ -1,0 +1,15 @@
+
+.menu-button {
+    text-align: center;
+    width: 100px;
+    height: 100%;
+    line-height: 50px;
+    background-color: #444;
+    color: #DDD;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #333;
+}

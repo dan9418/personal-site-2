@@ -97,6 +97,28 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/Menu/Menu.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/Menu/Menu.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n.menu-button {\\r\\n    text-align: center;\\r\\n    width: 100px;\\r\\n    height: 100%;\\r\\n    line-height: 50px;\\r\\n    background-color: #444;\\r\\n    color: #DDD;\\r\\n    display: inline-block;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.menu-button:hover {\\r\\n    background-color: #333;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/Menu/Menu.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/SidePanel/SidePanel.css":
+/*!***************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/SidePanel/SidePanel.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n.side-panel-link {\\r\\n    width: 100%;\\r\\n    text-align: center;\\r\\n    color: #333;\\r\\n    cursor: pointer;\\r\\n    height: 50px;\\r\\n    line-height: 50px;\\r\\n}\\r\\n\\r\\n.side-panel-link:hover {\\r\\n    background-color: #DDD;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/SidePanel/SidePanel.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
@@ -293,7 +315,53 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\n__webpack_require__(/*! ./App.css */ \"./src/App.css\");\r\nclass App extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(React.Fragment, null,\r\n                React.createElement(\"div\", { id: \"top\" }, \"Menu\"),\r\n                React.createElement(\"div\", { id: 'left' }, \"Contact\"),\r\n                React.createElement(\"div\", { id: 'right' }, \"Main\")));\r\n        };\r\n    }\r\n}\r\nexports.App = App;\r\nconst domContainer = document.querySelector('#app');\r\nReactDOM.render(React.createElement(App, null), domContainer);\r\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\n__webpack_require__(/*! ./App.css */ \"./src/App.css\");\r\nconst MenuButton_1 = __webpack_require__(/*! ./Menu/MenuButton */ \"./src/Menu/MenuButton.tsx\");\r\nconst SidePanelLink_1 = __webpack_require__(/*! ./SidePanel/SidePanelLink */ \"./src/SidePanel/SidePanelLink.tsx\");\r\nclass App extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(React.Fragment, null,\r\n                React.createElement(\"div\", { id: \"top\" },\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Bio' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Resume' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Web Dev' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Music' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Art' })),\r\n                React.createElement(\"div\", { id: 'left' },\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'LinkedIn' }),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'GitHub' }),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'Bandcamp' })),\r\n                React.createElement(\"div\", { id: 'right' })));\r\n        };\r\n    }\r\n}\r\nexports.App = App;\r\nconst domContainer = document.querySelector('#app');\r\nReactDOM.render(React.createElement(App, null), domContainer);\r\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+
+/***/ }),
+
+/***/ "./src/Menu/Menu.css":
+/*!***************************!*\
+  !*** ./src/Menu/Menu.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./Menu.css */ \"./node_modules/css-loader/dist/cjs.js!./src/Menu/Menu.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/Menu/Menu.css?");
+
+/***/ }),
+
+/***/ "./src/Menu/MenuButton.tsx":
+/*!*********************************!*\
+  !*** ./src/Menu/MenuButton.tsx ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\n__webpack_require__(/*! ./Menu.css */ \"./src/Menu/Menu.css\");\r\nclass MenuButton extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(\"div\", { className: 'menu-button' }, this.props.text));\r\n        };\r\n    }\r\n}\r\nexports.MenuButton = MenuButton;\r\n\n\n//# sourceURL=webpack:///./src/Menu/MenuButton.tsx?");
+
+/***/ }),
+
+/***/ "./src/SidePanel/SidePanel.css":
+/*!*************************************!*\
+  !*** ./src/SidePanel/SidePanel.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./SidePanel.css */ \"./node_modules/css-loader/dist/cjs.js!./src/SidePanel/SidePanel.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/SidePanel/SidePanel.css?");
+
+/***/ }),
+
+/***/ "./src/SidePanel/SidePanelLink.tsx":
+/*!*****************************************!*\
+  !*** ./src/SidePanel/SidePanelLink.tsx ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\n__webpack_require__(/*! ./SidePanel.css */ \"./src/SidePanel/SidePanel.css\");\r\nclass SidePanelLink extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(\"div\", { className: 'side-panel-link' }, this.props.text));\r\n        };\r\n    }\r\n}\r\nexports.SidePanelLink = SidePanelLink;\r\n\n\n//# sourceURL=webpack:///./src/SidePanel/SidePanelLink.tsx?");
 
 /***/ }),
 

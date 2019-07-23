@@ -1,0 +1,13 @@
+
+.side-panel-link {
+    width: 100%;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+}
+
+.side-panel-link:hover {
+    background-color: #DDD;
+}
