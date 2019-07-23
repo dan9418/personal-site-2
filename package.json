@@ -2,9 +2,11 @@
   "name": "personal-site-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compileJSX": "npx babel src --out-dir lib --presets react-app/prod --copy-files",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,23 @@
   "bugs": {
     "url": "https://github.com/dan9418/personal-site-2/issues"
   },
-  "homepage": "https://github.com/dan9418/personal-site-2#readme"
+  "homepage": "https://github.com/dan9418/personal-site-2#readme",
+  "dependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.35.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "css-loader": "^3.0.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack-cli": "^3.3.5"
+  }
 }
