@@ -25,6 +25,7 @@ export class App extends React.Component<any, any> {
                     <MenuButton text='Art'/>
                 </div>
 				<div id='left'>
+                    <div id='side-panel-header'>[photo]</div>
                     <SidePanelLink text='LinkedIn'/>
                     <SidePanelLink text='GitHub'/>
                     <SidePanelLink text='Bandcamp'/>

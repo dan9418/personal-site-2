@@ -36,3 +36,10 @@ html, body {
 	top: 50px;
 	left: 0px;
 }
+
+#side-panel-header {
+	height: 200px;
+	background-color: #CCC;
+	text-align: center;
+    line-height: 200px;
+}

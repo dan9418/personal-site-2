@@ -10,7 +10,7 @@ export class SidePanelLink extends React.Component<any, any> {
 	render = () => {
 		return (
 				<div className='side-panel-link'>
-					<div className='side-panel-link-icon'>X</div>
+					<div className='side-panel-link-icon'>□</div>
 					<div className='side-panel-link-text'>{this.props.text}</div>
 				</div>
 		);
