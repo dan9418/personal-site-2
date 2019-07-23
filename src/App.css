@@ -6,3 +6,30 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+#top {
+	background-color: #DDD;
+	width: 100%;
+	height: 50px;
+}
+
+#left {
+	background-color: #EEE;
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+}
+
+#right {
+	background-color: #FFF;
+	width: 100%;
+	height: 100%;
+	margin-left: 200px;
+	display: inline-block;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+}

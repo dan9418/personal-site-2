@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\r\\n\\tfont-family: sans-serif;\\r\\n}\\r\\n\\r\\nhtml, body {\\r\\n\\tmargin: 0;\\r\\n\\tpadding: 0;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/App.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\r\\n\\tfont-family: sans-serif;\\r\\n}\\r\\n\\r\\nhtml, body {\\r\\n\\tmargin: 0;\\r\\n\\tpadding: 0;\\r\\n}\\r\\n\\r\\n#top {\\r\\n\\tbackground-color: #DDD;\\r\\n\\twidth: 100%;\\r\\n\\theight: 50px;\\r\\n}\\r\\n\\r\\n#left {\\r\\n\\tbackground-color: #EEE;\\r\\n\\twidth: 200px;\\r\\n\\theight: 100%;\\r\\n\\tdisplay: inline-block;\\r\\n\\tposition: absolute;\\r\\n\\ttop: 50px;\\r\\n\\tleft: 0px;\\r\\n}\\r\\n\\r\\n#right {\\r\\n\\tbackground-color: #FFF;\\r\\n\\twidth: 100%;\\r\\n\\theight: 100%;\\r\\n\\tmargin-left: 200px;\\r\\n\\tdisplay: inline-block;\\r\\n\\tposition: absolute;\\r\\n\\ttop: 50px;\\r\\n\\tleft: 0px;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/App.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -293,7 +293,7 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\n__webpack_require__(/*! ./App.css */ \"./src/App.css\");\r\nclass App extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(React.Fragment, null, 'Hello World!'));\r\n        };\r\n    }\r\n}\r\nexports.App = App;\r\nconst domContainer = document.querySelector('#app');\r\nReactDOM.render(React.createElement(App, null), domContainer);\r\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\n__webpack_require__(/*! ./App.css */ \"./src/App.css\");\r\nclass App extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(React.Fragment, null,\r\n                React.createElement(\"div\", { id: \"top\" }, \"Menu\"),\r\n                React.createElement(\"div\", { id: 'left' }, \"Contact\"),\r\n                React.createElement(\"div\", { id: 'right' }, \"Main\")));\r\n        };\r\n    }\r\n}\r\nexports.App = App;\r\nconst domContainer = document.querySelector('#app');\r\nReactDOM.render(React.createElement(App, null), domContainer);\r\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
 
 /***/ }),
 

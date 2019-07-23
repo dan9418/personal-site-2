@@ -11,7 +11,15 @@ export class App extends React.Component<any, any> {
 	render = () => {
 		return (
 			<>
-				{'Hello World!'}
+                <div id="top">
+                    Menu
+                </div>
+				<div id='left'>
+                    Contact
+                </div>
+                <div id='right'>
+                    Main
+                </div>
 			</>
 		);
 	};
