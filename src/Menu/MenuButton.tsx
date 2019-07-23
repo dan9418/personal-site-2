@@ -10,7 +10,8 @@ export class MenuButton extends React.Component<any, any> {
 	render = () => {
 		return (
 				<div className='menu-button'>
-					{this.props.text}
+					<div className='menu-button-icon'>X</div>
+					<div className='menu-button-text'>{this.props.text}</div>
 				</div>
 		);
 	};

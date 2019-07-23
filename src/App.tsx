@@ -30,6 +30,7 @@ export class App extends React.Component<any, any> {
                     <SidePanelLink text='Bandcamp'/>
                 </div>
                 <div id='right'>
+                    <h1>Welcome!</h1>
                     <TextBlock text={bio1}/>
                     <TextBlock text={bio2}/>
                 </div>

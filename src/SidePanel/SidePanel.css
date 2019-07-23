@@ -1,7 +1,6 @@
 
 .side-panel-link {
     width: 100%;
-    text-align: center;
     background-color: #DDD;
     color: #333;
     cursor: pointer;
@@ -12,4 +11,14 @@
 
 .side-panel-link:hover {
     background-color: #CCC;
+}
+
+.side-panel-link-icon {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.side-panel-link-text {
+    display: inline-block;
 }
