@@ -17,6 +17,7 @@
 .resume-position {
     text-align: left;
     margin: 10px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -66,6 +67,7 @@
     margin: 5px;
     font-size: 18px;
     position: relative;
+    text-align: left;
 }
 
 .resume-detail-bullet {
@@ -80,4 +82,5 @@
 .resume-detail-date {
     position: absolute;
     right: 10px;
+    top: 0;
 }
