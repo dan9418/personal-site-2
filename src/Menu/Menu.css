@@ -17,9 +17,13 @@
     width: 50px;
     display: inline-block;
     text-align: center;
+    vertical-align: top;
+    height: 100%
 }
 
 .menu-button-text {
     display: inline-block;
     padding-right: 15px;
+    vertical-align: top;
+    height: 100%
 }

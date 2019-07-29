@@ -4,6 +4,7 @@ import "./App.css";
 import { MenuButton } from "./Menu/MenuButton";
 import { SidePanelLink } from "./SidePanel/SidePanelLink";
 import { TextBlock } from "./TextBlock/TextBlock";
+import { Icon } from "./Icon/Icon";
 
 export class App extends React.Component<any, any> {
 
@@ -18,17 +19,17 @@ export class App extends React.Component<any, any> {
 		return (
 			<>
                 <div id="top">
-                    <MenuButton text='Bio'/>
-                    <MenuButton text='Resume'/>
-                    <MenuButton text='Web Dev'/>
-                    <MenuButton text='Music'/>
-                    <MenuButton text='Art'/>
+                    <MenuButton text='Bio' icon={<Icon path='./img/icons/home.svg'/>}/>
+                    <MenuButton text='Resume' icon={<Icon path='./img/icons/resume.svg'/>}/>
+                    <MenuButton text='Web Dev' icon={<Icon path='./img/icons/webdev.svg'/>}/>
+                    <MenuButton text='Music' icon={<Icon path='./img/icons/music.svg'/>}/>
+                    <MenuButton text='Art' icon={<Icon path='./img/icons/art.svg'/>}/>
                 </div>
 				<div id='left'>
                     <div id='side-panel-header'>[photo]</div>
-                    <SidePanelLink text='LinkedIn'/>
-                    <SidePanelLink text='GitHub'/>
-                    <SidePanelLink text='Bandcamp'/>
+                    <SidePanelLink text='LinkedIn' icon={<Icon path='./img/icons/linkedin.svg'/>}/>
+                    <SidePanelLink text='GitHub' icon={<Icon path='./img/icons/github.svg'/>}/>
+                    <SidePanelLink text='Bandcamp' icon={<Icon path='./img/icons/bandcamp.svg'/>}/>
                 </div>
                 <div id='right'>
                     <h1>Welcome!</h1>

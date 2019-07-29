@@ -97,6 +97,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/Icon/Icon.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/Icon/Icon.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n.icon {\\r\\n    width: 30px;\\r\\n    height: 30px;\\r\\n    padding: 10px;\\r\\n}\\r\\n\\r\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/Icon/Icon.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/Menu/Menu.css":
 /*!*****************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/Menu/Menu.css ***!
@@ -104,7 +115,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n.menu-button {\\r\\n    text-align: center;\\r\\n    height: 100%;\\r\\n    line-height: 50px;\\r\\n    background-color: #444;\\r\\n    color: #DDD;\\r\\n    display: inline-block;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.menu-button:hover {\\r\\n    background-color: #333;\\r\\n}\\r\\n\\r\\n.menu-button-icon {\\r\\n    width: 50px;\\r\\n    display: inline-block;\\r\\n    text-align: center;\\r\\n}\\r\\n\\r\\n.menu-button-text {\\r\\n    display: inline-block;\\r\\n    padding-right: 15px;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/Menu/Menu.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n.menu-button {\\r\\n    text-align: center;\\r\\n    height: 100%;\\r\\n    line-height: 50px;\\r\\n    background-color: #444;\\r\\n    color: #DDD;\\r\\n    display: inline-block;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.menu-button:hover {\\r\\n    background-color: #333;\\r\\n}\\r\\n\\r\\n.menu-button-icon {\\r\\n    width: 50px;\\r\\n    display: inline-block;\\r\\n    text-align: center;\\r\\n    vertical-align: top;\\r\\n    height: 100%\\r\\n}\\r\\n\\r\\n.menu-button-text {\\r\\n    display: inline-block;\\r\\n    padding-right: 15px;\\r\\n    vertical-align: top;\\r\\n    height: 100%\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/Menu/Menu.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -115,7 +126,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n.side-panel-link {\\r\\n    width: 100%;\\r\\n    background-color: #DDD;\\r\\n    color: #333;\\r\\n    cursor: pointer;\\r\\n    height: 50px;\\r\\n    line-height: 50px;\\r\\n    font-size: 16px;\\r\\n}\\r\\n\\r\\n.side-panel-link:hover {\\r\\n    background-color: #CCC;\\r\\n}\\r\\n\\r\\n.side-panel-link-icon {\\r\\n    width: 50px;\\r\\n    display: inline-block;\\r\\n    text-align: center;\\r\\n}\\r\\n\\r\\n.side-panel-link-text {\\r\\n    display: inline-block;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/SidePanel/SidePanel.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n.side-panel-link {\\r\\n    width: 100%;\\r\\n    background-color: #DDD;\\r\\n    color: #333;\\r\\n    cursor: pointer;\\r\\n    height: 50px;\\r\\n    line-height: 50px;\\r\\n    font-size: 16px;\\r\\n}\\r\\n\\r\\n.side-panel-link:hover {\\r\\n    background-color: #CCC;\\r\\n}\\r\\n\\r\\n.side-panel-link-icon {\\r\\n    width: 50px;\\r\\n    display: inline-block;\\r\\n    text-align: center;\\r\\n    height: 100%;\\r\\n    vertical-align: top;\\r\\n}\\r\\n\\r\\n.side-panel-link-text {\\r\\n    display: inline-block;\\r\\n    height: 100%;\\r\\n    vertical-align: top;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/SidePanel/SidePanel.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -326,7 +337,30 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\n__webpack_require__(/*! ./App.css */ \"./src/App.css\");\r\nconst MenuButton_1 = __webpack_require__(/*! ./Menu/MenuButton */ \"./src/Menu/MenuButton.tsx\");\r\nconst SidePanelLink_1 = __webpack_require__(/*! ./SidePanel/SidePanelLink */ \"./src/SidePanel/SidePanelLink.tsx\");\r\nconst TextBlock_1 = __webpack_require__(/*! ./TextBlock/TextBlock */ \"./src/TextBlock/TextBlock.tsx\");\r\nclass App extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            let bio1 = \"I'm a software engineer, environmentalist, musician, and eclectic hobbyist currently based in Pittsburgh, PA. I graduated from the University of Pittsburgh in 2017 and now work full-time with Bentley Systems using a wide range of technologies. Outside of work, I’m involved with many technical and creative projects.\";\r\n            let bio2 = \"Beyond software, my greatest interests are audio engineering, bicycling, urban agriculture, healthy living, politics, travel, language, and graphic design.\";\r\n            return (React.createElement(React.Fragment, null,\r\n                React.createElement(\"div\", { id: \"top\" },\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Bio' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Resume' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Web Dev' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Music' }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Art' })),\r\n                React.createElement(\"div\", { id: 'left' },\r\n                    React.createElement(\"div\", { id: 'side-panel-header' }, \"[photo]\"),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'LinkedIn' }),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'GitHub' }),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'Bandcamp' })),\r\n                React.createElement(\"div\", { id: 'right' },\r\n                    React.createElement(\"h1\", null, \"Welcome!\"),\r\n                    React.createElement(TextBlock_1.TextBlock, { text: bio1 }),\r\n                    React.createElement(TextBlock_1.TextBlock, { text: bio2 }))));\r\n        };\r\n    }\r\n}\r\nexports.App = App;\r\nconst domContainer = document.querySelector('#app');\r\nReactDOM.render(React.createElement(App, null), domContainer);\r\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\r\n__webpack_require__(/*! ./App.css */ \"./src/App.css\");\r\nconst MenuButton_1 = __webpack_require__(/*! ./Menu/MenuButton */ \"./src/Menu/MenuButton.tsx\");\r\nconst SidePanelLink_1 = __webpack_require__(/*! ./SidePanel/SidePanelLink */ \"./src/SidePanel/SidePanelLink.tsx\");\r\nconst TextBlock_1 = __webpack_require__(/*! ./TextBlock/TextBlock */ \"./src/TextBlock/TextBlock.tsx\");\r\nconst Icon_1 = __webpack_require__(/*! ./Icon/Icon */ \"./src/Icon/Icon.tsx\");\r\nclass App extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            let bio1 = \"I'm a software engineer, environmentalist, musician, and eclectic hobbyist currently based in Pittsburgh, PA. I graduated from the University of Pittsburgh in 2017 and now work full-time with Bentley Systems using a wide range of technologies. Outside of work, I’m involved with many technical and creative projects.\";\r\n            let bio2 = \"Beyond software, my greatest interests are audio engineering, bicycling, urban agriculture, healthy living, politics, travel, language, and graphic design.\";\r\n            return (React.createElement(React.Fragment, null,\r\n                React.createElement(\"div\", { id: \"top\" },\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Bio', icon: React.createElement(Icon_1.Icon, { path: './img/icons/home.svg' }) }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Resume', icon: React.createElement(Icon_1.Icon, { path: './img/icons/resume.svg' }) }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Web Dev', icon: React.createElement(Icon_1.Icon, { path: './img/icons/webdev.svg' }) }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Music', icon: React.createElement(Icon_1.Icon, { path: './img/icons/music.svg' }) }),\r\n                    React.createElement(MenuButton_1.MenuButton, { text: 'Art', icon: React.createElement(Icon_1.Icon, { path: './img/icons/art.svg' }) })),\r\n                React.createElement(\"div\", { id: 'left' },\r\n                    React.createElement(\"div\", { id: 'side-panel-header' }, \"[photo]\"),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'LinkedIn', icon: React.createElement(Icon_1.Icon, { path: './img/icons/linkedin.svg' }) }),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'GitHub', icon: React.createElement(Icon_1.Icon, { path: './img/icons/github.svg' }) }),\r\n                    React.createElement(SidePanelLink_1.SidePanelLink, { text: 'Bandcamp', icon: React.createElement(Icon_1.Icon, { path: './img/icons/bandcamp.svg' }) })),\r\n                React.createElement(\"div\", { id: 'right' },\r\n                    React.createElement(\"h1\", null, \"Welcome!\"),\r\n                    React.createElement(TextBlock_1.TextBlock, { text: bio1 }),\r\n                    React.createElement(TextBlock_1.TextBlock, { text: bio2 }))));\r\n        };\r\n    }\r\n}\r\nexports.App = App;\r\nconst domContainer = document.querySelector('#app');\r\nReactDOM.render(React.createElement(App, null), domContainer);\r\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+
+/***/ }),
+
+/***/ "./src/Icon/Icon.css":
+/*!***************************!*\
+  !*** ./src/Icon/Icon.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./Icon.css */ \"./node_modules/css-loader/dist/cjs.js!./src/Icon/Icon.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/Icon/Icon.css?");
+
+/***/ }),
+
+/***/ "./src/Icon/Icon.tsx":
+/*!***************************!*\
+  !*** ./src/Icon/Icon.tsx ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\n__webpack_require__(/*! ./Icon.css */ \"./src/Icon/Icon.css\");\r\nclass Icon extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(\"img\", { className: 'icon', src: this.props.path }));\r\n        };\r\n    }\r\n}\r\nexports.Icon = Icon;\r\n\n\n//# sourceURL=webpack:///./src/Icon/Icon.tsx?");
 
 /***/ }),
 
@@ -349,7 +383,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dis
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\n__webpack_require__(/*! ./Menu.css */ \"./src/Menu/Menu.css\");\r\nclass MenuButton extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(\"div\", { className: 'menu-button' },\r\n                React.createElement(\"div\", { className: 'menu-button-icon' }, \"\\u25A1\"),\r\n                React.createElement(\"div\", { className: 'menu-button-text' }, this.props.text)));\r\n        };\r\n    }\r\n}\r\nexports.MenuButton = MenuButton;\r\n\n\n//# sourceURL=webpack:///./src/Menu/MenuButton.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\n__webpack_require__(/*! ./Menu.css */ \"./src/Menu/Menu.css\");\r\nclass MenuButton extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(\"div\", { className: 'menu-button' },\r\n                React.createElement(\"div\", { className: 'menu-button-icon' }, this.props.icon),\r\n                React.createElement(\"div\", { className: 'menu-button-text' }, this.props.text)));\r\n        };\r\n    }\r\n}\r\nexports.MenuButton = MenuButton;\r\n\n\n//# sourceURL=webpack:///./src/Menu/MenuButton.tsx?");
 
 /***/ }),
 
@@ -372,7 +406,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dis
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\n__webpack_require__(/*! ./SidePanel.css */ \"./src/SidePanel/SidePanel.css\");\r\nclass SidePanelLink extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(\"div\", { className: 'side-panel-link' },\r\n                React.createElement(\"div\", { className: 'side-panel-link-icon' }, \"\\u25A1\"),\r\n                React.createElement(\"div\", { className: 'side-panel-link-text' }, this.props.text)));\r\n        };\r\n    }\r\n}\r\nexports.SidePanelLink = SidePanelLink;\r\n\n\n//# sourceURL=webpack:///./src/SidePanel/SidePanelLink.tsx?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\r\n__webpack_require__(/*! ./SidePanel.css */ \"./src/SidePanel/SidePanel.css\");\r\nclass SidePanelLink extends React.Component {\r\n    constructor(props) {\r\n        super(props);\r\n        this.render = () => {\r\n            return (React.createElement(\"div\", { className: 'side-panel-link' },\r\n                React.createElement(\"div\", { className: 'side-panel-link-icon' }, this.props.icon),\r\n                React.createElement(\"div\", { className: 'side-panel-link-text' }, this.props.text)));\r\n        };\r\n    }\r\n}\r\nexports.SidePanelLink = SidePanelLink;\r\n\n\n//# sourceURL=webpack:///./src/SidePanel/SidePanelLink.tsx?");
 
 /***/ }),
 
