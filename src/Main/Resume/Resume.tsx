@@ -49,7 +49,12 @@ export class ResumeDetail extends React.Component<any, any> {
 	render = () => {
 		return (
 			<div className='resume-detail'>
-				{this.props.children}
+				<div className='resume-detail-bullet'>
+					•
+				</div>
+				<div className='resume-detail-content'>
+					{this.props.children}
+				</div>
 				<div className='resume-detail-date'>
 					{this.props.date}
 				</div>

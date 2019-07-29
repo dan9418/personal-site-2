@@ -65,4 +65,19 @@
 .resume-detail {
     margin: 5px;
     font-size: 18px;
+    position: relative;
+}
+
+.resume-detail-bullet {
+    display: inline-block;
+    width: 10px;
+}
+
+.resume-detail-content {
+    display: inline-block;
+}
+
+.resume-detail-date {
+    position: absolute;
+    right: 10px;
 }
