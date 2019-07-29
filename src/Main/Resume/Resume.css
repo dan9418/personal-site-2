@@ -1,0 +1,59 @@
+/* Section */
+.resume-section {
+
+}
+
+.resume-section-header {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.resume-section-content {
+
+}
+
+/* Position */
+
+.resume-position {
+    text-align: left;
+    margin: 10px;
+    position: relative;
+}
+
+.resume-position-header {
+    position: relative;
+}
+
+.resume-position-subheader {
+    position: relative;
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
+}
+
+.resume-position-header-company {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.resume-position-header-title {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.resume-position-header-date {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.resume-position-header-location {
+
+}
+
+.resume-position-content {
+    
+}
