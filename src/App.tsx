@@ -31,7 +31,6 @@ export class App extends React.Component<any, any> {
         return (
             <>
                 <div id="top">
-                    <div id='menu-name'>Dan Bednarczyk</div>
                     <MenuButton text='Bio' setPage={this.setPage} page={Bio} icon={<Icon path='./img/icons/home.svg' />} />
                     <MenuButton text='Resume' setPage={this.setPage} page={Resume} icon={<Icon path='./img/icons/resume.svg' />} />
                     <MenuButton text='Web Dev' setPage={this.setPage} page={WebDev} icon={<Icon path='./img/icons/webdev.svg' />} />
@@ -41,8 +40,16 @@ export class App extends React.Component<any, any> {
                 <div id='left'>
                     <div id='side-panel-header'>
                         <img id='me' src='./img/me.jpg' />
-                        <div id='side-panel-header-location'>
-                            <img id='side-panel-header-location-icon' src='./img/icons/location.svg' />
+                    </div>
+                    <div id='side-panel-info'>
+                        <div className='side-panel-info-item name'>
+                            Dan Bednarczyk
+                        </div>
+                        <div className='side-panel-info-item title'>
+                            Web Developer
+                        </div>
+                        <div className='side-panel-info-item location'>
+                            <img className='info-icon' src='./img/icons/location.svg' />
                             Davis, CA
                         </div>
                     </div>
@@ -51,7 +58,7 @@ export class App extends React.Component<any, any> {
                     <SidePanelLink text='Bandcamp' icon={<Icon path='./img/icons/bandcamp.svg' />} />
                 </div>
                 <div id='right'>
-                    <Page/>
+                    <Page />
                 </div>
             </>
         );

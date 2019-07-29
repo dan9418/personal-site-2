@@ -39,29 +39,40 @@ html, body {
 }
 
 #side-panel-header {
-	height: 200px;
 	text-align: center;
-	line-height: 200px;
-	position: relative;
-	margin-bottom: 10px;
+	padding: 15px;
 }
 
-#side-panel-header-location {
+#side-panel-info {
 	text-align: center;
-    font-style: italic;
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 20px;
-    font-size: 16px;
+	position: relative;
+	font-size: 16px;
 	line-height: 20px;
 	color: #555;
 }
 
-#side-panel-header-location-icon {
+.side-panel-info-item {
+	text-align: center;
+    display: inline-block;
+    width: 100%;
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+.side-panel-info-item.name {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.side-panel-info-item.title {
+	
+}
+
+.side-panel-info-item.location {
+    font-style: italic;
+}
+
+.side-panel-info-item .info-icon {
 	height: 16px;
     width: 16px;
     margin-right: 5px
@@ -69,17 +80,5 @@ html, body {
 
 #me {
 	height: 150px;
-    padding: 25px;
     border-radius: 100px;
-}
-
-#menu-name {
-	display: inline-block;
-	position: absolute;
-	padding: 10px;
-	height: 30px;
-	left: 0px;
-	color: #DDD;
-	font-weight: bold;
-	line-height: 30px;
 }
