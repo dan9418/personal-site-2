@@ -6,10 +6,10 @@
 .resume-section-header {
     padding: 20px;
     font-weight: bold;
+    margin: 5px;
 }
 
 .resume-section-content {
-
 }
 
 /* Position */
@@ -22,6 +22,7 @@
 
 .resume-position-header {
     position: relative;
+    margin: 5px;
 }
 
 .resume-position-subheader {
@@ -29,6 +30,7 @@
     font-style: italic;
     font-size: 18px;
     color: #555;
+    margin: 5px;
 }
 
 .resume-position-header-company {
@@ -55,5 +57,12 @@
 }
 
 .resume-position-content {
-    
+    margin: 10px;
+}
+
+/* Detail */
+
+.resume-detail {
+    margin: 5px;
+    font-size: 18px;
 }
