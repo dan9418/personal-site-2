@@ -26,7 +26,7 @@ export class App extends React.Component<any, any> {
                     <MenuButton text='Art' icon={<Icon path='./img/icons/art.svg'/>}/>
                 </div>
 				<div id='left'>
-                    <div id='side-panel-header'>[photo]</div>
+                    <div id='side-panel-header'><img id='me' src='./img/me.jpg'/></div>
                     <SidePanelLink text='LinkedIn' icon={<Icon path='./img/icons/linkedin.svg'/>}/>
                     <SidePanelLink text='GitHub' icon={<Icon path='./img/icons/github.svg'/>}/>
                     <SidePanelLink text='Bandcamp' icon={<Icon path='./img/icons/bandcamp.svg'/>}/>

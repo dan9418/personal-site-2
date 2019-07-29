@@ -43,3 +43,9 @@ html, body {
 	text-align: center;
     line-height: 200px;
 }
+
+#me {
+	height: 150px;
+    padding: 25px;
+    border-radius: 100px;
+}
