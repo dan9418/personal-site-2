@@ -9,6 +9,13 @@ h1 {
 html, body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#app {
+	height: 100%;
+	width: 100%;
 }
 
 #top {
@@ -30,12 +37,9 @@ html, body {
 
 #right {
 	background-color: #EEE;
-	height: 100%;
-	margin-left: 200px;
-	display: inline-block;
-	position: absolute;
-	top: 50px;
-	left: 0px;
+    height: 100%;
+    margin-left: 200px;
+    text-align: center;
 }
 
 #side-panel-header {

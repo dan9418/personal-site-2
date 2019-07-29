@@ -14,7 +14,7 @@ export class Bio extends React.Component<any, any> {
 
 		return (
 			<div className='bio-container'>
-				<h1>Welcome!</h1>
+				<TextBlock text={'Welcome!'} />
 				<TextBlock text={bio1} />
 				<TextBlock text={bio2} />
 			</div>
