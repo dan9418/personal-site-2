@@ -1,0 +1,90 @@
+/* Gallery */
+
+.gallery {
+    margin-bottom: 50px;
+}
+
+.gallery-header {
+    padding: 10px;
+}
+
+.gallery-name {
+    font-weight: bold;
+}
+
+.gallery-description {
+    font-style: italic;
+}
+
+/* Content */
+
+.gallery-content {
+    
+}
+
+.gallery-content-name {
+    font-weight: bold;
+}
+
+.gallery-content-year {
+    padding-left: 5px;
+}
+
+.gallery-content-caption {
+    font-style: italic;
+}
+
+/* Main */
+
+.gallery-main {
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+    width: 400px;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.gallery-main-image-container {
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+    width: 300px;
+    line-height: 300px;
+}
+
+.gallery-main-image {
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.gallery-main-nav {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 300px;
+    line-height: 300px;
+    width: 50px;
+}
+
+.gallery-main-nav-button {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
+
+.gallery-main-nav-button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* Thumbnails */
+
+.gallery-thumbnails {
+    height: 50px;
+}
