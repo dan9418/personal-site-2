@@ -2,21 +2,20 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./App.css";
 import { MenuButton } from "./Menu/MenuButton";
-import { SidePanelLink } from "./SidePanel/SidePanelLink";
-import { TextBlock } from "./TextBlock/TextBlock";
 import { Icon } from "./Icon/Icon";
 import { Bio } from "./Main/Bio/Bio";
 import { Resume } from "./Main/Resume/Resume";
 import { WebDev } from "./Main/WebDev/WebDev";
 import { Music } from "./Main/Music/Music";
 import { Art } from "./Main/Art/Art";
+import { SidePanelLink } from "./SidePanel/SidePanelLink";
 
 export class App extends React.Component<any, any> {
 
     constructor(props) {
         super(props);
         this.state = {
-            page: Bio
+            page: Music
         }
     }
 

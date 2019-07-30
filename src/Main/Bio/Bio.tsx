@@ -1,6 +1,5 @@
 import * as React from "react";
 import "./Bio.css";
-import { TextBlock } from "../../TextBlock/TextBlock";
 
 export class Bio extends React.Component<any, any> {
 
