@@ -46,6 +46,8 @@
     text-align: left;
     min-height: 250px;
     vertical-align: top;
+    max-width: 250px;
+    font-size: 16px;
 }
 
 .album-summary {
