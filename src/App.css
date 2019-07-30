@@ -17,23 +17,25 @@ html, body {
 	background-color: #DDD;
 }
 
-#top {
-	background-color: #444;
+.navbar {
+	background-color: #555;
+	color: #EEE;
 	text-align: right;
 	width: 100%;
 	height: 50px;
 }
 
-#left {
+.side-panel {
 	width: 200px;
 	position: absolute;
 	top: 50px;
 	bottom: 0px;
 	left: 0px;
 	background-color: #DDD;
+	color: #444;
 }
 
-#right {
+.main {
 	background-color: #EEE;
 	text-align: center;
 	position: absolute;
@@ -44,12 +46,12 @@ html, body {
 	overflow: auto;
 }
 
-#side-panel-header {
+.side-panel-header {
 	text-align: center;
 	padding: 15px;
 }
 
-#side-panel-info {
+.side-panel-info {
 	text-align: center;
 	position: relative;
 	font-size: 16px;
@@ -74,17 +76,24 @@ html, body {
 	
 }
 
-.side-panel-info-item.location {
-    font-style: italic;
-}
-
 .side-panel-info-item .info-icon {
 	height: 16px;
     width: 16px;
     margin-right: 5px
 }
 
-#me {
+.side-panel-info-item.location {
+    font-style: italic;
+}
+
+.side-panel-info-item.location svg {
+	height: 16px;
+    width: 16px;
+    padding: 0;
+    padding-right: 5px;
+}
+
+.me {
 	height: 150px;
     border-radius: 100px;
 }
