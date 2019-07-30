@@ -82,6 +82,192 @@ export class Art extends React.Component<any, any> {
 					path: './img/galleries/albums/yellow_snow.jpg'
 				}
 			]
+		},
+		{
+			name: 'Snapchat Filters',
+			description: '...',
+			images: [
+				{
+					name: 'Chesterfield Street',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/filters/chesterfield.png'
+				},
+				{
+					name: 'WPTS Radio',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/filters/wpts.png'
+				},
+				{
+					name: 'Ward Street',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/filters/ward.png'
+				},
+				{
+					name: 'Pitt',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/filters/pitt.jpg'
+				}
+			]
+		},
+		{
+			name: 'Just For Fun',
+			description: '...',
+			images: [
+				{
+					name: 'Angels & Demons',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/angel_demon.jpg'
+				},
+				{
+					name: 'CEO Bednarczyk',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/ceo.jpg'
+				},
+				{
+					name: 'Stalemate',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/chess.jpg'
+				},
+				{
+					name: 'Dolla Dolla Bill Y\'all',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/dollar.jpg'
+				},
+				{
+					name: 'The Godfather Parody',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/godfather.jpg'
+				},
+				{
+					name: 'Hostage',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/hostage.jpg'
+				},
+				{
+					name: 'My Good Friend Jimmy',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/jimmy_fallon.jpg'
+				},
+				{
+					name: 'MiniMe',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/minime.jpg'
+				},
+				{
+					name: 'Have You Seen Me?',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/missing_fridge.jpg'
+				},
+				{
+					name: 'Multitasking',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/multitasking.jpg'
+				},
+				{
+					name: 'The Simpsons Parody',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/simpsons.jpg'
+				},
+				{
+					name: 'Skydiving',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/personal/skydiving.jpg'
+				},
+				{
+					name: 'Painted',
+					year: 2010,
+					caption: 'Green Day Parody',
+					path: './img/galleries/personal/spray_paint.jpg'
+				},
+				{
+					name: 'Digital World',
+					year: 2010,
+					caption: 'Help?',
+					path: './img/galleries/personal/tv.jpg'
+				}
+			]
+		},
+		{
+			name: 'T-Shirts',
+			description: '...',
+			images: [
+				{
+					name: 'E-Week: Harry Potter',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/shirts/harry_potter.jpg'
+				},
+				{
+					name: 'E-Week: Hunger Games',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/shirts/hunger_games.jpg'
+				},
+				{
+					name: 'E-Week: Freshmen Crest',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/shirts/freshmen.jpg'
+				},
+				{
+					name: 'E-Week: Pixar',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/shirts/pixar.jpg'
+				},
+				{
+					name: 'Pather Pitt 2016',
+					year: 2010,
+					caption: '',
+					path: './img/galleries/shirts/panther_pitt.jpg'
+				}
+			]
+		},
+		{
+			name: 'Tattoos',
+			description: '...',
+			images: [
+				{
+					name: 'Nature Arm Band',
+					year: 2017,
+					caption: '',
+					path: './img/galleries/tattoos/lost_is_found.jpg'
+				},
+				{
+					name: 'Harmonic Series',
+					year: 2019,
+					caption: '',
+					path: './img/galleries/tattoos/harmonic_series.png'
+				},
+				{
+					name: 'Binary Cross',
+					year: 2015,
+					caption: '',
+					path: './img/galleries/tattoos/binary_cross.png'
+				},
+				{
+					name: 'Bike',
+					year: 2018,
+					caption: '',
+					path: './img/galleries/tattoos/bike.png'
+				}
+			]
 		}
 	]
 
@@ -92,7 +278,7 @@ export class Art extends React.Component<any, any> {
 	getGalleries = () => {
 		<Gallery name='Tattoos' description='Some tattoos.' images={[]} />
 		let galleries = [];
-		for(let i = 0; i < Art.GALLERY_CONFIG.length; i++) {
+		for (let i = 0; i < Art.GALLERY_CONFIG.length; i++) {
 			let gallery = Art.GALLERY_CONFIG[i];
 			galleries.push(<Gallery key={gallery.name} {...gallery} />);
 		}
