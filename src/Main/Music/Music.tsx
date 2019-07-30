@@ -29,7 +29,7 @@ export class Music extends React.Component<any, any> {
 						{ name: 'Bandcamp', icon: './img/icons/bandcamp.svg', link: 'https://atlaseuphoria.bandcamp.com/album/need-not' },
 						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/need_not.txt' }
 					],
-					art: { path: './img/albums/need_not.jpg', name: 'Need Not Album Cover' }
+					art: { path: './img/albums/need_not.jpg', name: 'Need Not album cover' }
 				},
 				{
 					title: 'Silent City',
@@ -53,7 +53,7 @@ export class Music extends React.Component<any, any> {
 						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=BdZc8xkQArw&feature=youtu.be' },
 						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/silent_city.txt' }
 					],
-					art: { path: './img/albums/silent_city.jpg', name: 'Silent City Album Cover' }
+					art: { path: './img/albums/silent_city.jpg', name: 'Silent City album cover' }
 				}
 			],
 		},
@@ -72,26 +72,26 @@ export class Music extends React.Component<any, any> {
 						{ name: 'SoundCloud', icon: './img/icons/soundcloud.svg', link: 'https://soundcloud.com/livingfiction/peanut-butter-jam' },
 						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/peanut_butter_jam.txt' }
 					],
-					art: { path: './img/albums/peanut_butter_jam.jpg', name: 'Peanut Butter Jam Album Cover' }
+					art: { path: './img/albums/peanut_butter_jam.jpg', name: 'Peanut Butter Jam album cover' }
 				},
 				{
 					title: 'Songs; And How NOT To Write Them!',
 					year: 2015,
 					tracks: [
 						{ title: 'Revolution: Day One' },
-						{ title: 'Bob [NOFX]' },
+						{ title: 'Bob', note: '(NOFX cover)' },
 						{ title: 'Revenge of the Pink Flamingo' },
-						{ title: 'I Melt With You [Modern English]' },
+						{ title: 'I Melt With You', note: '(Modern English cover)' },
 						{ title: 'No Direction' },
-						{ title: 'tourette\'s [Nirvana]' },
-						{ title: 'Sell Out [Reel Big Fish]' },
+						{ title: 'tourette\'s', note: '(Nirvana cover)' },
+						{ title: 'Sell Out', note: '(Reel Big Fish cover)' },
 						{ title: 'Just Another' },
 						{ title: 'Walking The Plank' },
-						{ title: 'New Girl [The Suicide Machines]' },
+						{ title: 'New Girl', note: '(The Suicide Machines cover)' },
 						{ title: 'Cartoon Chase Scene' },
-						{ title: 'Blue Moon [The Marcels]' },
+						{ title: 'Blue Moon', note: '(The Marcels cover)' },
 						{ title: 'The Wave Equation' },
-						{ title: 'What I Got [Sublime]' },
+						{ title: 'What I Got', note: '(Sublime cover)' },
 						{ title: 'Requiem For Third Wave Ska' }
 					],
 					summary: 'A low-budget ska-punk album filled with humor and classic covers.',
@@ -100,7 +100,7 @@ export class Music extends React.Component<any, any> {
 						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=WDdDrvqkbOk&list=PLF0EOAvsOKeCp_HowkIF6CVeExxuDXYRm' },
 						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/songs_and_how_not_to_write_them.txt' }
 					],
-					art: { path: './img/albums/songs_and_how_not_to_write_them.jpg', name: 'Songs; And How NOT To Write Them! Album Cover' }
+					art: { path: './img/albums/songs_and_how_not_to_write_them.jpg', name: 'Songs; And How NOT To Write Them! album cover' }
 				},
 				{
 					title: 'Yellow Snow',
@@ -118,7 +118,7 @@ export class Music extends React.Component<any, any> {
 						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=f2EV4bBB4E8&list=PLF0EOAvsOKeAv8CK8nJT1sRIGEK17w96s' },
 						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/yellow_snow.txt' }
 					],
-					art: { path: './img/albums/yellow_snow.jpg', name: 'Yellow Snow Album Cover' }
+					art: { path: './img/albums/yellow_snow.jpg', name: 'Yellow Snow album cover' }
 				}
 			]
 		},
@@ -130,20 +130,20 @@ export class Music extends React.Component<any, any> {
 					title: 'Human Architecture',
 					year: 2017,
 					tracks: [
-						{ title: 'History Begins [Temperance]' },
-						{ title: 'Collector [Lust]' },
-						{ title: 'Constellations [Patience]' },
-						{ title: 'New Idol [Averice]' },
-						{ title: 'Tremors [Envy]' },
-						{ title: 'In Valor & Venom [Wrath]' },
-						{ title: 'Gyroscope [Kindness]' },
-						{ title: 'Eyes Averted Diligence]' },
-						{ title: 'Fiend [Gluttony]' },
-						{ title: 'Atrophy [Sloth]' },
-						{ title: 'Waking Hours [Chastity]' },
-						{ title: 'Seek Shelter [Charity]' },
-						{ title: 'Architecture [Pride]' },
-						{ title: 'Last Will [Humility]' }
+						{ title: 'History Begins', note: '(Temperance)' },
+						{ title: 'Collector', note: '(Lust)' },
+						{ title: 'Constellations', note: '(Patience)' },
+						{ title: 'New Idol', note: '(Averice)' },
+						{ title: 'Tremors', note: '(Envy)' },
+						{ title: 'In Valor & Venom', note: '(Wrath)' },
+						{ title: 'Gyroscope', note: '(Kindness)' },
+						{ title: 'Eyes Averted', note: '(Diligence)' },
+						{ title: 'Fiend', note: '(Gluttony)' },
+						{ title: 'Atrophy', note: '(Sloth)' },
+						{ title: 'Waking Hours', note: '(Chastity)' },
+						{ title: 'Seek Shelter', note: '(Charity)' },
+						{ title: 'Architecture', note: '(Pride)' },
+						{ title: 'Last Will', note: '(Humility)' }
 					],
 					summary: 'An experimental instrumental prog-rock concept album exploring the Seven Deadly Sins.',
 					links: [
@@ -151,7 +151,7 @@ export class Music extends React.Component<any, any> {
 						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=vzKuYdfCpdk' },
 						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/human_architecture.txt' }
 					],
-					art: { path: './img/albums/human_architecture.jpg', name: 'Human Architecture Album Cover' }
+					art: { path: './img/albums/human_architecture.jpg', name: 'Human Architecture album cover' }
 				},
 				{
 					title: 'Out Of Reach',
@@ -162,14 +162,14 @@ export class Music extends React.Component<any, any> {
 						{ title: 'Pink Flamingo' },
 						{ title: 'Exactly!' },
 						{ title: 'Memento Mori' },
-						{ title: 'In Loving Memory... (Tribute to Herbert Vargo III)' },
+						{ title: 'In Loving Memory...', note: '(Tribute to Herbert Vargo III)' },
 						{ title: 'Quicksand' },
 						{ title: 'The Bullfighter' },
 						{ title: 'Paperwork' },
 						{ title: 'Resurrection' },
 						{ title: 'Identity' },
 						{ title: 'The Ballad of Billy Mays' },
-						{ title: 'You Took Everything (An Interlude)' },
+						{ title: 'You Took Everything', note: '(An Interlude)' },
 						{ title: 'Demolition' },
 						{ title: 'The Marrow of a Bone' },
 						{ title: 'Frail' },
@@ -184,7 +184,7 @@ export class Music extends React.Component<any, any> {
 						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=mL2CbEXX6lo&list=PLF0EOAvsOKeDZnT4z2Z-tZaFzL0qVuk6f' },
 						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/out_of_reach.txt' }
 					],
-					art: { path: './img/albums/out_of_reach.jpg', name: 'Out Of Reach Album Cover' }
+					art: { path: './img/albums/out_of_reach.jpg', name: 'Out Of Reach album cover' }
 				}
 			]
 		}
@@ -198,10 +198,7 @@ export class Music extends React.Component<any, any> {
 		let albums = [];
 		for (let i = 0; i < Music.ALBUM_CONFIG.length; i++) {
 			let category = Music.ALBUM_CONFIG[i];
-			albums.push([
-			<h2>{category.name}</h2>,
-			<p>{category.description}</p>,
-			<>{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}</>]);
+			albums.push(<div key={category.name + i}><h2>{category.name}</h2><p>{category.description}</p><>{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}</></div>);
 		}
 		return albums;
 	}

@@ -45,7 +45,7 @@ export class Album extends React.Component<AlbumProps, any> {
 		let tracks = [];
 		for(let i = 0; i < this.props.tracks.length; i++) {
 			let track = this.props.tracks[i];
-			tracks.push(<li key={i}>{track.title}</li>)
+			tracks.push(<li className='album-track' key={i}>{track.title}<span className='album-track-note'>{track.note}</span></li>)
 		}
 		return <ol>{tracks}</ol>;
 	}
@@ -55,14 +55,14 @@ export class Album extends React.Component<AlbumProps, any> {
 			<div className='album'>
 				<div className='album-header'>
 					<div className='album-title'>{this.props.title}<span>({this.props.year})</span></div>
+					<div className='album-summary'>{this.props.summary}</div>
 				</div>
 				<div className='album-content'>
 					<div className='album-art-container'>
 						<img className='album-art' src={this.props.art.path} alt={this.props.art.name}/>
+						<div className='album-link-container'>{this.getLinks()}</div>
 					</div>
 					<div className='album-tracklist'>{this.getTracks()}</div>
-					<div className='album-link-container'>{this.getLinks()}</div>
-					<div className='album-summary'>{this.props.summary}</div>
 				</div>
 			</div>
 		);
