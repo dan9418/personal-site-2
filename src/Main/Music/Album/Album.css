@@ -19,12 +19,15 @@
     margin: 10px;
 }
 
-.album-link {
-    display: inline-block;
+.album-link-container svg {
     height: 35px;
     width: 35;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.album-link-container svg, .album-link-container svg * {
+    fill: #444;
 }
 
 .album-content {

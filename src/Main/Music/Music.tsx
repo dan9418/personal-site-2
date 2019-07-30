@@ -26,8 +26,8 @@ export class Music extends React.Component<any, any> {
 					],
 					summary: 'As I find my voice, literally and figuratively, I tried to make an acoustic project that was a little fun and a little serious.',
 					links: [
-						{ name: 'Bandcamp', icon: './img/icons/bandcamp.svg', link: 'https://atlaseuphoria.bandcamp.com/album/need-not' },
-						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/need_not.txt' }
+						{ name: 'Bandcamp', icon: 'bandcamp', link: 'https://atlaseuphoria.bandcamp.com/album/need-not' },
+						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/need_not.txt' }
 					],
 					art: { path: './img/albums/need_not.jpg', name: 'Need Not album cover' }
 				},
@@ -48,10 +48,10 @@ export class Music extends React.Component<any, any> {
 					],
 					summary: 'My first proper album, an experimental indie rock project exploring themes of environmentalism and self-discovery.',
 					links: [
-						{ name: 'Bandcamp', icon: './img/icons/bandcamp.svg', link: 'https://atlaseuphoria.bandcamp.com/album/silent-city' },
-						{ name: 'SoundCloud', icon: './img/icons/soundcloud.svg', link: 'https://soundcloud.com/atlaseuphoria/sets/silent-city' },
-						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=BdZc8xkQArw&feature=youtu.be' },
-						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/silent_city.txt' }
+						{ name: 'Bandcamp', icon: 'bandcamp', link: 'https://atlaseuphoria.bandcamp.com/album/silent-city' },
+						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/atlaseuphoria/sets/silent-city' },
+						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=BdZc8xkQArw&feature=youtu.be' },
+						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/silent_city.txt' }
 					],
 					art: { path: './img/albums/silent_city.jpg', name: 'Silent City album cover' }
 				}
@@ -69,8 +69,8 @@ export class Music extends React.Component<any, any> {
 					],
 					summary: '',
 					links: [
-						{ name: 'SoundCloud', icon: './img/icons/soundcloud.svg', link: 'https://soundcloud.com/livingfiction/peanut-butter-jam' },
-						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/peanut_butter_jam.txt' }
+						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/peanut-butter-jam' },
+						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/peanut_butter_jam.txt' }
 					],
 					art: { path: './img/albums/peanut_butter_jam.jpg', name: 'Peanut Butter Jam album cover' }
 				},
@@ -96,9 +96,9 @@ export class Music extends React.Component<any, any> {
 					],
 					summary: 'A low-budget ska-punk album filled with humor and classic covers.',
 					links: [
-						{ name: 'SoundCloud', icon: './img/icons/soundcloud.svg', link: 'https://soundcloud.com/livingfiction/sets/songs-and-how-not-to-write-them' },
-						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=WDdDrvqkbOk&list=PLF0EOAvsOKeCp_HowkIF6CVeExxuDXYRm' },
-						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/songs_and_how_not_to_write_them.txt' }
+						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/sets/songs-and-how-not-to-write-them' },
+						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=WDdDrvqkbOk&list=PLF0EOAvsOKeCp_HowkIF6CVeExxuDXYRm' },
+						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/songs_and_how_not_to_write_them.txt' }
 					],
 					art: { path: './img/albums/songs_and_how_not_to_write_them.jpg', name: 'Songs; And How NOT To Write Them! album cover' }
 				},
@@ -114,9 +114,9 @@ export class Music extends React.Component<any, any> {
 					],
 					summary: 'A ridiculous EP to celebrate Christmas in July. Not to be taken seriously.',
 					links: [
-						{ name: 'SoundCloud', icon: './img/icons/soundcloud.svg', link: 'https://soundcloud.com/livingfiction/sets/the-vectors-yellow-snow' },
-						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=f2EV4bBB4E8&list=PLF0EOAvsOKeAv8CK8nJT1sRIGEK17w96s' },
-						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/yellow_snow.txt' }
+						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/sets/the-vectors-yellow-snow' },
+						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=f2EV4bBB4E8&list=PLF0EOAvsOKeAv8CK8nJT1sRIGEK17w96s' },
+						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/yellow_snow.txt' }
 					],
 					art: { path: './img/albums/yellow_snow.jpg', name: 'Yellow Snow album cover' }
 				}
@@ -147,9 +147,9 @@ export class Music extends React.Component<any, any> {
 					],
 					summary: 'An experimental instrumental prog-rock concept album exploring the Seven Deadly Sins.',
 					links: [
-						{ name: 'SoundCloud', icon: './img/icons/soundcloud.svg', link: 'https://soundcloud.com/atlaseuphoria/sets/human-architecture' },
-						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=vzKuYdfCpdk' },
-						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/human_architecture.txt' }
+						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/atlaseuphoria/sets/human-architecture' },
+						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=vzKuYdfCpdk' },
+						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/human_architecture.txt' }
 					],
 					art: { path: './img/albums/human_architecture.jpg', name: 'Human Architecture album cover' }
 				},
@@ -180,9 +180,9 @@ export class Music extends React.Component<any, any> {
 					],
 					summary: 'My first formal collection of songs, recorded during my sophomore year of high school.',
 					links: [
-						{ name: 'SoundCloud', icon: './img/icons/soundcloud.svg', link: 'https://soundcloud.com/livingfiction/sets/out-of-reach' },
-						{ name: 'YouTube', icon: './img/icons/youtube.svg', link: 'https://www.youtube.com/watch?v=mL2CbEXX6lo&list=PLF0EOAvsOKeDZnT4z2Z-tZaFzL0qVuk6f' },
-						{ name: 'Lyrics', icon: './img/icons/lyrics.svg', link: './docs/lyrics/out_of_reach.txt' }
+						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/sets/out-of-reach' },
+						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=mL2CbEXX6lo&list=PLF0EOAvsOKeDZnT4z2Z-tZaFzL0qVuk6f' },
+						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/out_of_reach.txt' }
 					],
 					art: { path: './img/albums/out_of_reach.jpg', name: 'Out Of Reach album cover' }
 				}

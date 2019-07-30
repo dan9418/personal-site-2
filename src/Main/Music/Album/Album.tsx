@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./Album.css";
+import { ICONS } from "../../../Common/Icon";
 
 export interface IconLink {
 	name: string;
@@ -36,7 +37,7 @@ export class Album extends React.Component<AlbumProps, any> {
 		let links = [];
 		for(let i = 0; i < this.props.links.length; i++) {
 			let link = this.props.links[i];
-			links.push(<a key={i} href={link.link} target='_blank'><img className='album-link' src={link.icon} alt={link.name}/></a>);
+			links.push(<a key={i} href={link.link} target='_blank'>{ICONS[link.icon]}</a>);
 		}
 		return links;
 	}
