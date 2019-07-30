@@ -71,7 +71,7 @@ export class Resume extends React.Component<any, any> {
 
 	render = () => {
 		return (
-			<div className='resume-container'>
+			<div className='page-container'>
 				<ResumeSection title='Education'>
 					<ResumePosition
 						company='University of Pittsburgh, Swanson School of Engineering'

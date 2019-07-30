@@ -9,7 +9,7 @@ export class Art extends React.Component<any, any> {
 
 	render = () => {
 		return (
-				<div className='art-container'>
+				<div className='page-container'>
 					
 				</div>
 		);

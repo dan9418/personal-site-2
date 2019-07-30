@@ -9,7 +9,7 @@ export class WebDev extends React.Component<any, any> {
 
 	render = () => {
 		return (
-			<div className='web-dev-container'>
+			<div className='page-container'>
 					
 			</div>
 		);

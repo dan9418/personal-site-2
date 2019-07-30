@@ -88,3 +88,8 @@ html, body {
 	height: 150px;
     border-radius: 100px;
 }
+
+.page-container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
