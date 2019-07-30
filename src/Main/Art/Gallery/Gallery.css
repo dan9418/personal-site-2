@@ -10,20 +10,25 @@
 
 .gallery-name {
     font-weight: bold;
+    font-size: 26px;
 }
 
 .gallery-description {
     font-style: italic;
+    font-size: 16px;
 }
 
 /* Content */
 
 .gallery-content {
-    
+    background-color: #DDD;
+    padding: 25px;
+    border-radius: 25px;
 }
 
 .gallery-content-name {
-    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
 }
 
 .gallery-content-year {
@@ -32,6 +37,8 @@
 
 .gallery-content-caption {
     font-style: italic;
+    font-size: 16px;
+    padding: 5px;
 }
 
 /* Main */
@@ -76,6 +83,7 @@
     height: 30px;
     width: 30px;
     line-height: 30px;
+    font-size: 30px;
 }
 
 .gallery-main-nav-button:hover {

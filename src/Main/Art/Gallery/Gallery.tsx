@@ -53,7 +53,7 @@ export class Gallery extends React.Component<GalleryProps, GalleryState> {
 					<div className='gallery-description'>{this.props.description}</div>
 				</div>
 				<div className='gallery-content'>
-					<div className='gallery-content-name'>{main.name}<span className='gallery-content-year'>{main.year}</span></div>
+					<div className='gallery-content-name'>{main.name}<span className='gallery-content-year'>({main.year})</span></div>
 					<div className='gallery-main'>
 						<div className='gallery-main-nav'>
 							<div className='gallery-main-nav-button' onClick={() => this.navigate(-1)}>⯇</div>
