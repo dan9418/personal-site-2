@@ -1,5 +1,18 @@
 import * as React from "react";
 import "./Resume.css";
+import { ICONS } from "../../Common/Icon";
+
+export class ResumeMainHeader extends React.Component<any, any> {
+
+	constructor(props) {
+		super(props);
+	}
+
+	render = () => {
+		return (<div className='resume-main-header'>{this.props.title}</div>);
+	};
+}
+
 
 export class ResumeSection extends React.Component<any, any> {
 
@@ -7,17 +20,26 @@ export class ResumeSection extends React.Component<any, any> {
 		super(props);
 	}
 
+	/*getDetails = () => {
+		let details = [];
+		for (let i = 0; i < this.props.details.length; i++) {
+			let detail = this.props.details[i];
+			details.push(<ResumeDetail key={i} date={detail.date}>{detail.text}</ResumeDetail>);
+		}
+		return details;
+	}*/
+
 	render = () => {
 		return (
 			<div className='resume-section'>
-				<div className='resume-section-header'>{this.props.title}</div>
+				<div className='resume-section-header'>{this.props.header}</div>
 				<div className='resume-section-content'>{this.props.children}</div>
 			</div>
 		);
 	};
 }
 
-export class ResumePosition extends React.Component<any, any> {
+export class ResumePositionHeader extends React.Component<any, any> {
 
 	constructor(props) {
 		super(props);
@@ -25,16 +47,35 @@ export class ResumePosition extends React.Component<any, any> {
 
 	render = () => {
 		return (
-			<div className='resume-position'>
-				<div className='resume-position-header'>
+			<div className='resume-position-header'>
+				<div className='resume-position-header-top'>
 					<div className='resume-position-header-company'>{this.props.company}</div>
-					<div className='resume-position-header-title'>{this.props.title}</div>
-					<div className='resume-position-subheader'>
-						<div className='resume-position-header-location'>{this.props.location}</div>
-						<div className='resume-position-header-date'>{this.props.date}</div>
-					</div>
+					<div className='resume-position-header-date'>{this.props.date}</div>
 				</div>
-				<div className='resume-position-content'>{this.props.children}</div>
+				<div className='resume-position-header-bottom'>
+					<div className='resume-position-header-title'>{this.props.title}</div>
+					<div className='resume-position-header-location'>{ICONS.location}{this.props.location}</div>
+				</div>
+			</div>
+		);
+	};
+}
+
+export class ResumeProjectHeader extends React.Component<any, any> {
+
+	constructor(props) {
+		super(props);
+	}
+
+	render = () => {
+		return (
+			<div className='resume-project-header'>
+				<div className='resume-project-header-icon'>
+					{this.props.icon}
+				</div>
+				<div className='resume-project-header-name'>
+					{this.props.name}
+				</div>
 			</div>
 		);
 	};
@@ -49,10 +90,8 @@ export class ResumeDetail extends React.Component<any, any> {
 	render = () => {
 		return (
 			<div className='resume-detail'>
-				<div className='resume-detail-bullet'>
-					•
-				</div>
 				<div className='resume-detail-content'>
+					<div className='resume-detail-bullet'>•</div>
 					{this.props.children}
 				</div>
 				<div className='resume-detail-date'>
@@ -72,77 +111,112 @@ export class Resume extends React.Component<any, any> {
 	render = () => {
 		return (
 			<div className='page-container'>
-				<ResumeSection title='Education'>
-					<ResumePosition
-						company='University of Pittsburgh, Swanson School of Engineering'
-						date='April 2017'
-						location='Pittsburgh, PA'
-					>
-						<ResumeDetail>GPA: 3.71</ResumeDetail>
-						<ResumeDetail>Major: BS, Computer Engineering</ResumeDetail>
-						<ResumeDetail>Special Distictions: Outstanding Senior in Department</ResumeDetail>
-					</ResumePosition>
-				</ResumeSection>
-				<ResumeSection title='Experience'>
-					<ResumePosition
-						company='Bentley Systems'
-						title='Associate Software Engineer'
-						date='May 2016 - July 019'
-						location='Pittsburgh, PA'
-					>
+				<ResumeSection header={<ResumeMainHeader title='Professional Experience' />}>
+
+					<ResumeSection
+						header={<ResumePositionHeader
+							company='Bentley Systems'
+							title='Associate Software Engineer'
+							date='May 2016 - July 019'
+							location='Pittsburgh, PA'
+						/>}>
 						<ResumeDetail>Selected for inaugural international program (3 months in Vilnius, Lithuania)</ResumeDetail>
 						<ResumeDetail>Works in cooperative agile environments using Scrum and Kanban</ResumeDetail>
 						<ResumeDetail>Uses .NET, TypeScript, AngularJS, C++, and SQL in web apps and APIs</ResumeDetail>
 						<ResumeDetail>Develops enhancements, fixes defects, and performs research-oriented tasks</ResumeDetail>
 						<ResumeDetail>Writes integration and unit tests using several frameworks</ResumeDetail>
-					</ResumePosition>
-					<ResumePosition
-						company='The Bank of New York Mellon Corporation'
-						title='Software Engineer Intern'
-						date='May 2015 – August 2015'
-						location='Pittsburgh, PA'
-					>
+					</ResumeSection>
+
+					<ResumeSection
+						header={<ResumePositionHeader
+							company='The Bank of New York Mellon Corporation'
+							title='Software Engineer Intern'
+							date='May 2015 – August 2015'
+							location='Pittsburgh, PA'
+						/>}>
 						<ResumeDetail>Automated daily data comparisons for updating central Reference Data Hub</ResumeDetail>
 						<ResumeDetail>Implemented in Java for separate partitions of MVS/Linux mainframe</ResumeDetail>
 						<ResumeDetail>Mapped data across DB2 databases to unify information</ResumeDetail>
-					</ResumePosition>
-					<ResumePosition
-						company='University of Pittsburgh, Residence Life'
-						title='Resident Assistant'
-						date='August 2014 - December 2015'
-						location='Pittsburgh, PA'
-					>
+					</ResumeSection>
+
+					<ResumeSection
+						header={<ResumePositionHeader
+							company='University of Pittsburgh, Residence Life'
+							title='Resident Assistant'
+							date='August 2014 - December 2015'
+							location='Pittsburgh, PA'
+						/>}>
 						<ResumeDetail>Enforced community standards and expectations</ResumeDetail>
 						<ResumeDetail>Managed 57 freshmen residents</ResumeDetail>
 						<ResumeDetail>Organized social and engineering programs for students</ResumeDetail>
-					</ResumePosition>
+					</ResumeSection>
+
 				</ResumeSection>
-				<ResumeSection title='Skills'>
-					<ResumeDetail>JavaScript</ResumeDetail>
-					<ResumeDetail>TypeScript</ResumeDetail>
-					<ResumeDetail>React</ResumeDetail>
-					<ResumeDetail>Angular</ResumeDetail>
-					<ResumeDetail>Node/npm</ResumeDetail>
-					<ResumeDetail>C#/.NET</ResumeDetail>
-					<ResumeDetail>C++</ResumeDetail>
-					<ResumeDetail>Java</ResumeDetail>
-					<ResumeDetail>Testing Frameworks</ResumeDetail>
+
+				<ResumeSection header={<ResumeMainHeader title='Education' />}>
+
+					<ResumeSection
+						header={<ResumePositionHeader
+							company='University of Pittsburgh, Swanson School of Engineering'
+							title='BS, Computer Engineering'
+							date='April 2017'
+							location='Pittsburgh, PA'
+						/>}>
+						<ResumeDetail>3.71 GPA</ResumeDetail>
+						<ResumeDetail>Selected as the Outstanding Senior in departmental class</ResumeDetail>
+						<ResumeDetail>Won 2nd place at departmental senior design expo for augmented reality project</ResumeDetail>
+						<ResumeDetail>Won 1st place for freshmen computer engineering conference paper</ResumeDetail>
+						<ResumeDetail>Served as Engineering Week Chairmen for Engineering Student Council</ResumeDetail>
+					</ResumeSection>
 				</ResumeSection>
-				<ResumeSection title='Awards'>
-					<ResumeDetail date='2017'>Selected as the Outstanding Senior in Computer Engineering graduating class</ResumeDetail>
-					<ResumeDetail date='2017'>2nd Place at Pitt Design Expo in Electrical and Computer Engineering department</ResumeDetail>
-					<ResumeDetail date='2014'>Recipient of Best Freshman Computer Engineering Conference Paper</ResumeDetail>
-					<ResumeDetail date='2013'>Recipient of Buick Engineering Achievers Scholarship</ResumeDetail>
-					<ResumeDetail date='2013'>Recipient of Pittsburgh Italian Scholarship</ResumeDetail>
-					<ResumeDetail date='2009'>Eagle Scout</ResumeDetail>
+
+				<ResumeSection header={<ResumeMainHeader title='Technical Skills' />}>
+					<ul>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>React</li>
+						<li>Angular</li>
+						<li>Node/npm</li>
+						<li>C#/.NET</li>
+						<li>C++</li>
+						<li>Java</li>
+						<li>Testing Frameworks</li>
+					</ul>
 				</ResumeSection>
-				<ResumeSection title='Activities'>
-					<ResumeDetail date='2017'>Featured on BikePGH's blog to promote year-end campaign</ResumeDetail>
-					<ResumeDetail date='2016-2017'>Engineers for a Sustainable World: Hydroponics Team</ResumeDetail>
-					<ResumeDetail date='2016'>Developed website for Pitt Sailing Club</ResumeDetail>
-					<ResumeDetail date='2015-2017'>Developed several Android applications</ResumeDetail>
-					<ResumeDetail date='2013-2017'>Engineering Student Council</ResumeDetail>
-					<ResumeDetail date='2014-2016'>Pitt Chapter of IEEE</ResumeDetail>
+
+				<ResumeSection header={<ResumeMainHeader title='Projects' />}>
+
+					<ResumeSection header='Web Apps'>
+						<ResumeDetail>Currently developing a highly configurable and extensible music theory visualization app written in React and TypeScript</ResumeDetail>
+						<ResumeDetail>Implemented this website</ResumeDetail>
+						<ResumeDetail>Served as webmaster for Sailing Club and The Aquaponics Project in college</ResumeDetail>
+					</ResumeSection>
+
+					<ResumeSection header='Android Apps'>
+						<ResumeDetail>Created an "augmented reality dashboard" app comissioned by Eaton to recognize electrical switchgear</ResumeDetail>
+						<ResumeDetail>Created a boolean algebra calculator</ResumeDetail>
+						<ResumeDetail>Created several other apps at college hackathons</ResumeDetail>
+					</ResumeSection>
+
+					<ResumeSection header='Controlled Environment Agriculture'>
+						<ResumeDetail>Assisted in design and construction of several tech-driven hydroponic systems for low-income residents</ResumeDetail>
+						<ResumeDetail>Investigated hydroponic produce facility for LEAN Launchpad college course</ResumeDetail>
+					</ResumeSection>
+
+					<ResumeSection header='Music'>
+						<ResumeDetail>Completed dozens of recoreded music projects as a multiinstrumentalist, producer, and songwriter</ResumeDetail>
+						<ResumeDetail>Studied audio engineering in the University of Pittsburgh Music Engineering Laboratory</ResumeDetail>
+					</ResumeSection>
+
+				</ResumeSection>
+
+				<ResumeSection header={<ResumeMainHeader title='Hobbies' />}>
+
+					<ResumeSection header='Bicycling'>
+						<ResumeDetail>Featured on BikePGH's blog to promote year-end campaign</ResumeDetail>
+						<ResumeDetail>Completed 62-mile PedalPGH course</ResumeDetail>
+					</ResumeSection>
+
 				</ResumeSection>
 			</div >
 		);

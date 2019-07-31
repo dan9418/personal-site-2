@@ -1,78 +1,85 @@
 /* Section */
 .resume-section {
-
+    margin-top: 15px;
 }
 
 .resume-section-header {
-    padding: 20px;
-    font-weight: bold;
-    margin: 5px;
+
 }
 
 .resume-section-content {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Main */
+
+.resume-main-header {
+    background: #555;
+    
+    padding: 5px;
+    border-radius: 5px;
+
+    font-weight: bold;
+    color: white;
 }
 
 /* Position */
 
-.resume-position {
-    text-align: left;
-    margin: 10px;
-    margin-top: 20px;
-    position: relative;
-}
-
 .resume-position-header {
-    position: relative;
-    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #DDD;
+    text-align: left;
 }
 
-.resume-position-subheader {
+.resume-position-header-top, .resume-position-header-bottom {
     position: relative;
-    font-style: italic;
-    font-size: 18px;
-    color: #555;
-    margin: 5px;
 }
 
 .resume-position-header-company {
     display: inline-block;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .resume-position-header-title {
     display: inline-block;
+    font-size: 18px;
+}
+
+.resume-position-header-date, .resume-position-header-location {
     position: absolute;
     right: 0;
     top: 0;
+    font-style: italic;
+    font-size: 16px;
 }
 
-.resume-position-header-date {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
+.resume-position-header-location svg {
+	height: 16px;
+    width: 16px;
+    padding: 0;
+    padding-right: 5px;
+    fill: #333;
 }
 
-.resume-position-header-location {
-
-}
-
-.resume-position-content {
-    margin: 10px;
+.resume-position-header-location svg * {
+    fill: #333;
 }
 
 /* Detail */
 
 .resume-detail {
-    margin: 5px;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 20px;
     position: relative;
     text-align: left;
 }
 
 .resume-detail-bullet {
     display: inline-block;
-    width: 10px;
+    width: 16px;
 }
 
 .resume-detail-content {

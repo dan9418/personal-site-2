@@ -15,7 +15,7 @@ export class App extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this.state = {
-            page: Bio
+            page: Resume
         }
     }
 
