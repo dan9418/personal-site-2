@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./Album.css";
 import { ICONS } from "../../../Common/Icon";
+import { SecondaryHeader, PageSection } from "../../../Common/Headers";
 
 export interface IconLink {
 	name: string;
@@ -53,11 +54,8 @@ export class Album extends React.Component<AlbumProps, any> {
 
 	render = () => {
 		return (
-			<div className='album'>
-				<div className='album-header'>
-					<div className='album-title'>{this.props.title}<span>({this.props.year})</span></div>
-					<div className='album-summary'>{this.props.summary}</div>
-				</div>
+			<PageSection header={<SecondaryHeader title={this.props.title + ' (' + this.props.year + ')'}/>}>
+				<p className='album-summary'>{this.props.summary}</p>
 				<div className='album-content'>
 					<div className='album-art-container'>
 						<img className='album-art' src={this.props.art.path} alt={this.props.art.name}/>
@@ -65,7 +63,7 @@ export class Album extends React.Component<AlbumProps, any> {
 					</div>
 					<div className='album-tracklist'>{this.getTracks()}</div>
 				</div>
-			</div>
+			</PageSection>
 		);
 	};
 }

@@ -22,9 +22,9 @@
 /* Primary Header */
 
 .page-header {
-    background: #555;
+    background: #666;
     
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 
     font-weight: bold;
@@ -34,13 +34,13 @@
 /* Primary Header */
 
 .primary-header {
-    background: #666;
+    background: #888;
     
     padding: 5px;
     border-radius: 5px;
 
     font-weight: bold;
-    color: white;
+    color: #EEE;
 }
 
 /* Secondary Header */

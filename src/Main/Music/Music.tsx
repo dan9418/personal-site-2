@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./Music.css";
 import { AlbumProps, Album } from "./Album/Album";
+import { PageHeader, PageSection, PrimaryHeader } from "../../Common/Headers";
 
 interface AlbumCategory {
 	name: string;
@@ -198,7 +199,12 @@ export class Music extends React.Component<any, any> {
 		let albums = [];
 		for (let i = 0; i < Music.ALBUM_CONFIG.length; i++) {
 			let category = Music.ALBUM_CONFIG[i];
-			albums.push(<div key={category.name + i}><h2>{category.name}</h2><p>{category.description}</p><>{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}</></div>);
+			albums.push(
+				<PageSection header={<PrimaryHeader title={category.name} key={category.name + i}/>}>
+					<p>{category.description}</p>
+					<>{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}</>
+				</PageSection>
+			);
 		}
 		return albums;
 	}
@@ -206,8 +212,9 @@ export class Music extends React.Component<any, any> {
 	render = () => {
 		return (
 			<div className='page-container'>
-				<h1>Music</h1>
-				<p>Music is one of my greatest passions - I love experimenting with instruments, genres, sounds, and production techniques. Most of my music is guitar-based, but I also play bass, drums, piano, and trombone. Beyond performing, I'm extremely interested in audio engineering, especially the creative manipulation and incorporation of weird sounds and textures in music. I have a modest home studio for recording myself and friends. While a student, I also worked in Pitt's Music Engineering Laboratory.</p>
+				<PageSection header={<PageHeader title='Music'></PageHeader>}>
+					<p>Music is one of my greatest passions - I love experimenting with instruments, genres, sounds, and production techniques. Most of my music is guitar-based, but I also play bass, drums, piano, and trombone. Beyond performing, I'm extremely interested in audio engineering, especially the creative manipulation and incorporation of weird sounds and textures in music. I have a modest home studio for recording myself and friends. While a student, I also worked in Pitt's Music Engineering Laboratory.</p>
+				</PageSection>
 				{this.getAlbums()}
 			</div>
 		);
