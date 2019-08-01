@@ -1,8 +1,8 @@
 import * as React from "react";
-import "./WebDev.css";
+import "./Code.css";
 import { PageSection } from "../../Common/Headers";
 
-export class WebDev extends React.Component<any, any> {
+export class Code extends React.Component<any, any> {
 
 	constructor(props) {
 		super(props);

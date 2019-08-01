@@ -3,10 +3,10 @@ import * as ReactDOM from "react-dom";
 import "./App.css";
 import { SidePanel } from "./SidePanel/SidePanel";
 
-import { Resume } from "./Main/Resume/Resume";
-import { WebDev } from "./Main/WebDev/WebDev";
-import { Music } from "./Main/Music/Music";
-import { Art } from "./Main/Art/Art";
+import { Resume } from "./Pages/Resume/Resume";
+import { Code } from "./Pages/Code/Code";
+import { Music } from "./Pages/Music/Music";
+import { Art } from "./Pages/Art/Art";
 import { Page } from "./Common/Page";
 import { PageSection } from "./Common/Headers";
 
@@ -21,7 +21,7 @@ export class App extends React.Component<any, any> {
         {
             id: 'code',
             name: 'Code',
-            component: WebDev
+            component: Code
         },
         {
             id: 'music',
