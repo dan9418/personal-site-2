@@ -19,6 +19,7 @@ export class SidePanelLink extends React.Component<any, any> {
 				</>}
 				<div className='side-panel-link-icon'>{this.props.icon}</div>
 				<div className='side-panel-link-text'>{this.props.text}</div>
+				<div className='side-panel-link-hover-icon'>{this.props.hoverIcon}</div>
 			</div>
 		);
 	};

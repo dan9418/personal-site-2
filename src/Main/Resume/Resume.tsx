@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Resume.css";
 import { ICONS } from "../../Common/Icon";
-import { PageSection, SecondaryHeader, PrimaryHeader } from "../../Common/Headers";
+import { PageSection, SecondaryHeader, PrimaryHeader, PageHeader } from "../../Common/Headers";
 export class ResumePositionHeader extends React.Component<any, any> {
 
 	constructor(props) {
@@ -79,7 +79,7 @@ export class Resume extends React.Component<any, any> {
 	render = () => {
 		return (
 			<div className='page-container'>
-				<PageSection header={<SecondaryHeader title='Professional Summary' />}>
+				<PageSection header={<PrimaryHeader title='Professional Summary' />}>
 					<p>
 						I am a highly motivated full-stack web developer recently relocated from Pittsburgh, PA to Northern California.
 						I am seeking a position where I can apply my technical background to one of my passions - agriculture, environmentalism, music, fitness, or community development.

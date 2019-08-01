@@ -2,10 +2,6 @@
 	font-family: sans-serif;
 }
 
-h1 {
-	text-align: center;
-}
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -18,26 +14,6 @@ html, body {
 	color: #333;
 }
 
-.navbar {
-	display: none;
-	background-color: #555;
-	color: #EEE;
-	text-align: right;
-	width: 100%;
-	height: 50px;
-	text-align: center;
-}
-
-.side-panel {
-	width: 200px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	background-color: #DDD;
-	color: #444;
-}
-
 .main {
 	background-color: #EEE;
 	text-align: center;
@@ -47,72 +23,6 @@ html, body {
 	right: 0;
 	bottom: 0;
 	overflow: auto;
-}
-
-.side-panel-header {
-	text-align: center;
-	padding: 15px;
-}
-
-.side-panel-info {
-	text-align: center;
-	position: relative;
-	font-size: 16px;
-	line-height: 20px;
-	color: #555;
-}
-
-.side-panel-info-item {
-	text-align: center;
-    display: inline-block;
-    width: 100%;
-	height: 20px;
-	margin-bottom: 10px;
-}
-
-.side-panel-info-item.name {
-	font-weight: bold;
-	font-size: 18px;
-}
-
-.side-panel-info-item.title {
-	
-}
-
-.side-panel-info-item .info-icon {
-	height: 16px;
-    width: 16px;
-    margin-right: 5px
-}
-
-.side-panel-info-item.location {
-    font-style: italic;
-}
-
-.side-panel-info-item.location svg {
-	height: 16px;
-    width: 16px;
-    padding: 0;
-    padding-right: 5px;
-}
-
-.side-panel-section {
-
-}
-
-.side-panel-section-header {
-	text-align: center;
-    height: 2px;
-    margin: 5px;
-    background: #CCC;
-    border-radius: 2px;
-}
-
-
-
-.me {
-	height: 150px;
-    border-radius: 100px;
 }
 
 .page-container {

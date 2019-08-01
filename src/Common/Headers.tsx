@@ -17,6 +17,17 @@ export class PageSection extends React.Component<any, any> {
     };
 }
 
+export class PageHeader extends React.Component<any, any> {
+
+    constructor(props) {
+        super(props);
+    }
+
+    render = () => {
+        return (<div className='page-header'>{this.props.title}</div>);
+    };
+}
+
 export class PrimaryHeader extends React.Component<any, any> {
 
     constructor(props) {
