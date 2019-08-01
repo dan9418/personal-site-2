@@ -6,8 +6,6 @@
 
 .page-section p {
     font-size: 16px;
-    max-width: 750px;
-    margin: auto;
 }
 
 .page-section-header {
@@ -15,8 +13,7 @@
 }
 
 .page-section-content {
-    padding: 5px;
-    margin: 5px;
+    margin: 10px;
 }
 
 /* Primary Header */

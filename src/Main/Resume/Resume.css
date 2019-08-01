@@ -73,8 +73,7 @@
     width: 20%;
     min-width: 100px;
     vertical-align: top;
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
     background: #DDD;
     border-radius: 5px;
 }
@@ -91,15 +90,14 @@
 /* Resume Key Skills */
 
 .resume-key-skills-container {
-    padding: 5px;
-    margin: 5px;
+    margin: 10px;
     font-size: 14px;
     opacity: .9;
 }
 
 .resume-key-skills-header {
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     font-weight: bold;
     display: inline-block;
 }

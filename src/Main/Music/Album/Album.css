@@ -55,7 +55,7 @@
 .album-summary {
     font-style: italic;
     font-size: 18px;
-    padding: 5px;
+    margin: 15px;
 }
 
 .album-track {

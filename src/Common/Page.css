@@ -1,6 +1,4 @@
 .page-container {
-	padding-left: 5%;
-	padding-right: 5%;
 	background-color: #EEE;
 	text-align: center;
 	position: absolute;
@@ -12,19 +10,10 @@
 }
 
 .page-header {
-	/* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* height: 50px; */
-    /* line-height: 50px; */
-    /* font-weight: bold; */
-    /* color: #EEE; */
-    z-index: 1000;
-    /* background: #555; */
     margin: 15px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+    font-variant-caps: all-small-caps;
 }
 
 .page-header-fade {
@@ -38,12 +27,6 @@
 }
 
 .page-content {
-    padding-left: 5%;
-    padding-right: 5%;
-    /* overflow: auto; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* bottom: 0; */
+    margin: auto;
+    max-width: 800px;
 }
