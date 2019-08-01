@@ -1,0 +1,17 @@
+.category-links-header {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.category-links svg {
+    height: 30px;
+    margin: 10px;
+}
+
+.category-links svg, .category-links svg * {
+    fill: #444;
+}
+
+.category-links svg:hover, .category-links svg:hover * {
+    fill: #888;
+}

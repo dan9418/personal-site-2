@@ -1,11 +1,13 @@
 import * as React from "react";
 import "./Music.css";
-import { AlbumProps, Album } from "./Album/Album";
+import { AlbumProps, Album, IconLink } from "./Album/Album";
 import { PageSection, PrimaryHeader } from "../../Common/Headers";
+import { ICONS } from "../../Common/Icon";
 
 interface AlbumCategory {
 	name: string;
 	description: string;
+	links?: IconLink[];
 	albums: AlbumProps[]
 }
 
@@ -14,7 +16,29 @@ export class Music extends React.Component<any, any> {
 	static ALBUM_CONFIG: AlbumCategory[] = [
 		{
 			name: 'Atlas Euphoria',
-			description: `I'm currently focusing on my solo experimental-folk project, Atlas Euphoria. My debut album and EP are available for free streaming on Bandcamp.`,
+			description: `Atlas Euphoria is the moniker I use for my solo material, which incorporates elements of indie rock, folk, and jazz. My first two projects are available now for free streaming and plenty more are in the works.`,
+			links: [
+				{
+					name: 'Bandcamp',
+					icon: 'bandcamp',
+					link: 'https://atlaseuphoria.bandcamp.com/'
+				},
+				{
+					name: 'Instagram',
+					icon: 'instagram',
+					link: 'https://www.instagram.com/atlaseuphoria/'
+				},
+				{
+					name: 'Facebook',
+					icon: 'facebook',
+					link: 'https://www.facebook.com/AtlasEuphoria'
+				},
+				{
+					name: 'YouTube',
+					icon: 'youtube',
+					link: 'https://www.youtube.com/channel/UCyq0-Fr2jM-GrbTB-SKOSkA'
+				}
+			],
 			albums: [
 				{
 					title: 'Need Not',
@@ -25,7 +49,7 @@ export class Music extends React.Component<any, any> {
 						{ title: 'Nature vs Nature' },
 						{ title: 'Small World' }
 					],
-					summary: 'As I find my voice, literally and figuratively, I tried to make an acoustic project that was a little fun and a little serious.',
+					summary: 'A simple acoustic project to help me find my voice, literally and figuratively.',
 					links: [
 						{ name: 'Bandcamp', icon: 'bandcamp', link: 'https://atlaseuphoria.bandcamp.com/album/need-not' },
 						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/need_not.txt' }
@@ -60,7 +84,24 @@ export class Music extends React.Component<any, any> {
 		},
 		{
 			name: 'The Vectors',
-			description: `My joke ska band from college.`,
+			description: `The Vectors were my band in college, intended as a comedic, dormroom exploration of the ska genre.`,
+			links: [
+				{
+					name: 'SoundCloud',
+					icon: 'soundcloud',
+					link: 'https://soundcloud.com/livingfiction/'
+				},
+				{
+					name: 'Facebook',
+					icon: 'facebook',
+					link: 'https://www.facebook.com/TheVectors14'
+				},
+				{
+					name: 'YouTube',
+					icon: 'youtube',
+					link: 'https://www.youtube.com/channel/UCVJVbOg-thDA-qI4L_fHfdg'
+				}
+			],
 			albums: [
 				{
 					title: 'Peanut Butter Jam',
@@ -68,7 +109,7 @@ export class Music extends React.Component<any, any> {
 					tracks: [
 						{ title: 'Peanut Butter Jam' }
 					],
-					summary: '',
+					summary: 'A one-off single and our only song recorded in a studio. Produced by Daniel Blake and Jonathan Pushkar',
 					links: [
 						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/peanut-butter-jam' },
 						{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/peanut_butter_jam.txt' }
@@ -95,7 +136,7 @@ export class Music extends React.Component<any, any> {
 						{ title: 'What I Got', note: '(Sublime cover)' },
 						{ title: 'Requiem For Third Wave Ska' }
 					],
-					summary: 'A low-budget ska-punk album filled with humor and classic covers.',
+					summary: 'A low-budget ska-punk album poking fun at 50\'s tropes and paying homage to our heroes.',
 					links: [
 						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/sets/songs-and-how-not-to-write-them' },
 						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=WDdDrvqkbOk&list=PLF0EOAvsOKeCp_HowkIF6CVeExxuDXYRm' },
@@ -107,7 +148,7 @@ export class Music extends React.Component<any, any> {
 					title: 'Yellow Snow',
 					year: 2015,
 					tracks: [
-						{ title: `White Christmas [Irving Berlin, The Drifters]` },
+						{ title: `White Christmas`, note: '(Irving Berlin + The Drifters cover)' },
 						{ title: `The Year That Flying Monkeys Saved Christmas` },
 						{ title: `Randolph The Red-Headed Gingerbread Man` },
 						{ title: `The Elf Who Wanted To Be A Dentist` },
@@ -125,7 +166,7 @@ export class Music extends React.Component<any, any> {
 		},
 		{
 			name: 'Other Projects',
-			description: 'Old projects',
+			description: 'A few old projects recorded just for fun.',
 			albums: [
 				{
 					title: 'Human Architecture',
@@ -146,7 +187,7 @@ export class Music extends React.Component<any, any> {
 						{ title: 'Architecture', note: '(Pride)' },
 						{ title: 'Last Will', note: '(Humility)' }
 					],
-					summary: 'An experimental instrumental prog-rock concept album exploring the Seven Deadly Sins.',
+					summary: 'An experimental, instrumental, prog-rock concept album exploring the Seven Deadly Sins.',
 					links: [
 						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/atlaseuphoria/sets/human-architecture' },
 						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=vzKuYdfCpdk' },
@@ -179,7 +220,7 @@ export class Music extends React.Component<any, any> {
 						{ title: 'Execution' },
 						{ title: 'Extrication' }
 					],
-					summary: 'My first formal collection of songs, recorded during my sophomore year of high school.',
+					summary: 'My first album, an eclectic set of songs recorded during my sophomore year of high school.',
 					links: [
 						{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/sets/out-of-reach' },
 						{ name: 'YouTube', icon: 'youtube', link: 'https://www.youtube.com/watch?v=mL2CbEXX6lo&list=PLF0EOAvsOKeDZnT4z2Z-tZaFzL0qVuk6f' },
@@ -200,8 +241,18 @@ export class Music extends React.Component<any, any> {
 		for (let i = 0; i < Music.ALBUM_CONFIG.length; i++) {
 			let category = Music.ALBUM_CONFIG[i];
 			albums.push(
-				<PageSection header={<PrimaryHeader title={category.name} key={category.name + i}/>}>
+				<PageSection header={<PrimaryHeader title={category.name} key={category.name + i} />}>
 					<p>{category.description}</p>
+					<div className='category-links'>
+						<div className='category-links-header'>
+							{category.name + ' on social media:'}
+						</div>
+						{category.links &&
+							category.links.map((link, index) => {
+								return <a key={index} href={link.link} target='_blank'>{ICONS[link.icon]}</a>
+							})
+						}
+					</div>
 					<>{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}</>
 				</PageSection>
 			);
@@ -213,7 +264,15 @@ export class Music extends React.Component<any, any> {
 		return (
 			<>
 				<PageSection>
-					<p>Music is one of my greatest passions - I love experimenting with instruments, genres, sounds, and production techniques. Most of my music is guitar-based, but I also play bass, drums, piano, and trombone. Beyond performing, I'm extremely interested in audio engineering, especially the creative manipulation and incorporation of weird sounds and textures in music. I have a modest home studio for recording myself and friends. While a student, I also worked in Pitt's Music Engineering Laboratory.</p>
+					<p>
+						Music is one of my greatest passions - I love experimenting with new instruments, genres, sounds, and production techniques.
+						Most of my music is guitar-based, but I also play some bass, drums, piano, and trombone.
+					</p>
+					<p>
+						Beyond performing, I'm extremely interested in audio engineering, especially the creative use of unconventional sounds and textures in music.
+						While a student, I studied and recorded in Pitt's Music Engineering Laboratory.
+						I now have a modest home studio for recording myself and friends.
+					</p>
 				</PageSection>
 				{this.getAlbums()}
 			</>
