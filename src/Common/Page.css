@@ -1,0 +1,30 @@
+.page-container {
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #EEE;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 200px;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+.page-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	line-height: 50px;
+	background: #666;
+	font-weight: bold;
+    color: white;
+}
+
+.page-content {
+	margin-top: 50px;
+	padding-left: 5%;
+	padding-right: 5%;
+}

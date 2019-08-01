@@ -7,6 +7,7 @@ import { Resume } from "./Main/Resume/Resume";
 import { WebDev } from "./Main/WebDev/WebDev";
 import { Music } from "./Main/Music/Music";
 import { Art } from "./Main/Art/Art";
+import { Page } from "./Common/Page";
 
 export class App extends React.Component<any, any> {
 
@@ -31,13 +32,11 @@ export class App extends React.Component<any, any> {
     }
 
     render = () => {
-        let Page = App.PAGES[this.state.page];
+        let PageContent = App.PAGES[this.state.page];
         return (
             <>
                 <SidePanel activePage={this.state.page} setActivePage={this.setActivePage}/>
-                <div className='main'>
-                    <Page />
-                </div>
+                <Page title='Music'>{<PageContent></PageContent>}</Page>
             </>
         );
     };
