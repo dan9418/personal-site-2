@@ -96,6 +96,20 @@ html, body {
     padding-right: 5px;
 }
 
+.side-panel-section {
+
+}
+
+.side-panel-section-header {
+	text-align: center;
+    height: 2px;
+    margin: 5px;
+    background: #CCC;
+    border-radius: 2px;
+}
+
+
+
 .me {
 	height: 150px;
     border-radius: 100px;

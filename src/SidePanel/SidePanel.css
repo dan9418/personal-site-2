@@ -5,10 +5,47 @@
     height: 50px;
     line-height: 50px;
     font-size: 16px;
+    position: relative;
 }
 
 .side-panel-link:hover {
     background-color: #CCC;
+    z-index: 10;
+}
+
+.side-panel-link.active {
+    background-color: #EEE;
+}
+
+.side-panel-link-corner {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0px;
+    background-color: #EEE;
+    z-index: 5;
+}
+
+.side-panel-link-corner div {
+    width: 10px;
+    height: 10px;
+    background-color: #DDD;
+}
+
+.side-panel-link-corner.top div{
+    border-radius: 0 0 10px 0;
+}
+
+.side-panel-link-corner.bottom div{
+    border-radius: 0 10px 0 0;
+}
+
+.side-panel-link-corner.top {
+    top: -10px
+}
+
+.side-panel-link-corner.bottom {
+    bottom: -10px
 }
 
 .side-panel-link-icon {

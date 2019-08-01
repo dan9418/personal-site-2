@@ -12,30 +12,30 @@ import { ICONS } from "./Common/Icon";
 
 export class App extends React.Component<any, any> {
 
+    static PAGES = [
+        Resume,
+        WebDev,
+        Music,
+        Art
+    ]
+
     constructor(props) {
         super(props);
         this.state = {
-            page: Resume
+            page: 0
         }
     }
 
-    setPage = (page) => {
+    setActivePage = (page) => {
         this.setState({
             page: page
         });
     }
 
     render = () => {
-        let Page = this.state.page;
+        let Page = App.PAGES[this.state.page];
         return (
             <>
-                <div className="navbar">
-                    <MenuButton text='Bio' setPage={this.setPage} page={Bio} icon={ICONS.home} />
-                    <MenuButton text='Resume' setPage={this.setPage} page={Resume} icon={ICONS.resume} />
-                    <MenuButton text='Web Dev' setPage={this.setPage} page={WebDev} icon={ICONS.webdev} />
-                    <MenuButton text='Music' setPage={this.setPage} page={Music} icon={ICONS.music} />
-                    <MenuButton text='Art' setPage={this.setPage} page={Art} icon={ICONS.art} />
-                </div>
                 <div className='side-panel'>
                     <div className='side-panel-header'>
                         <img className='me' src='./img/me.jpg' />
@@ -52,9 +52,19 @@ export class App extends React.Component<any, any> {
                             Davis, CA
                         </div>
                     </div>
-                    <SidePanelLink text='LinkedIn' icon={ICONS.linkedin} />
-                    <SidePanelLink text='GitHub' icon={ICONS.github} />
-                    <SidePanelLink text='Bandcamp' icon={ICONS.bandcamp} />
+                    <div className='side-panel-section'>
+                        <div className='side-panel-section-header'/>
+                        <SidePanelLink active={this.state.page === 0} action={() => this.setActivePage(0)} text='Resume' icon={ICONS.resume} />
+                        <SidePanelLink active={this.state.page === 1} action={() => this.setActivePage(1)} text='Web Dev' icon={ICONS.webdev} />
+                        <SidePanelLink active={this.state.page === 2} action={() => this.setActivePage(2)} text='Music' icon={ICONS.music} />
+                        <SidePanelLink active={this.state.page === 3} action={() => this.setActivePage(3)} text='Art' icon={ICONS.art} />
+                    </div>
+                    <div className='side-panel-section'>
+                        <div className='side-panel-section-header'/>
+                        <SidePanelLink text='LinkedIn' icon={ICONS.linkedin} />
+                        <SidePanelLink text='GitHub' icon={ICONS.github} />
+                        <SidePanelLink text='Bandcamp' icon={ICONS.bandcamp} />
+                    </div>
                 </div>
                 <div className='main'>
                     <Page />
