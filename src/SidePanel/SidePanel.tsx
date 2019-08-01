@@ -9,6 +9,22 @@ export class SidePanel extends React.Component<any, any> {
 		super(props);
 	}
 
+	getPageLinks = () => {
+		let pageLinks = [];
+		for (let i = 0; i < this.props.pages.length; i++) {
+			let page = this.props.pages[i];
+			pageLinks.push(
+				<SidePanelLink
+					key={i}
+					active={this.props.activePage.id === page.id}
+					action={() => this.props.setActivePage(page)}
+					text={page.name}
+					icon={ICONS[page.id]}
+				/>)
+		}
+		return pageLinks;
+	}
+
 	render = () => {
 		return (
 			<div className='side-panel'>
@@ -22,16 +38,13 @@ export class SidePanel extends React.Component<any, any> {
 				</div>
 				<div className='side-panel-section'>
 					<div className='side-panel-section-header' />
-					<SidePanelLink active={this.props.activePage === 0} action={() => this.props.setActivePage(0)} text='Resume' icon={ICONS.resume} />
-					<SidePanelLink active={this.props.activePage === 1} action={() => this.props.setActivePage(1)} text='Code' icon={ICONS.webdev} />
-					<SidePanelLink active={this.props.activePage === 2} action={() => this.props.setActivePage(2)} text='Music' icon={ICONS.music} />
-					<SidePanelLink active={this.props.activePage === 3} action={() => this.props.setActivePage(3)} text='Art' icon={ICONS.art} />
+					{this.getPageLinks()}
 				</div>
 				<div className='side-panel-section'>
 					<div className='side-panel-section-header' />
-					<SidePanelLink text='LinkedIn' icon={ICONS.linkedin} hoverIcon={ICONS.newtab}/>
-					<SidePanelLink text='GitHub' icon={ICONS.github} hoverIcon={ICONS.newtab}/>
-					<SidePanelLink text='Bandcamp' icon={ICONS.bandcamp} hoverIcon={ICONS.newtab}/>
+					<SidePanelLink text='LinkedIn' icon={ICONS.linkedin} hoverIcon={ICONS.newtab} />
+					<SidePanelLink text='GitHub' icon={ICONS.github} hoverIcon={ICONS.newtab} />
+					<SidePanelLink text='Bandcamp' icon={ICONS.bandcamp} hoverIcon={ICONS.newtab} />
 				</div>
 			</div>
 		);

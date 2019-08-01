@@ -8,20 +8,37 @@ import { WebDev } from "./Main/WebDev/WebDev";
 import { Music } from "./Main/Music/Music";
 import { Art } from "./Main/Art/Art";
 import { Page } from "./Common/Page";
+import { PageSection } from "./Common/Headers";
 
 export class App extends React.Component<any, any> {
 
     static PAGES = [
-        Resume,
-        WebDev,
-        Music,
-        Art
+        {
+            id: 'resume',
+            name: 'Resume',
+            component: Resume
+        },
+        {
+            id: 'code',
+            name: 'Code',
+            component: WebDev
+        },
+        {
+            id: 'music',
+            name: 'Music',
+            component: Music
+        },
+        {
+            id: 'art',
+            name: 'Art',
+            component: Art
+        }
     ]
 
     constructor(props) {
         super(props);
         this.state = {
-            page: 2
+            page: App.PAGES[2]
         }
     }
 
@@ -32,11 +49,11 @@ export class App extends React.Component<any, any> {
     }
 
     render = () => {
-        let PageContent = App.PAGES[this.state.page];
+        let PageComponent = this.state.page.component;
         return (
             <>
-                <SidePanel activePage={this.state.page} setActivePage={this.setActivePage}/>
-                <Page title='Music'>{<PageContent></PageContent>}</Page>
+                <SidePanel pages={App.PAGES} activePage={this.state.page} setActivePage={this.setActivePage}/>
+                <Page title={this.state.page.name}>{<PageComponent></PageComponent>}</Page>
             </>
         );
     };

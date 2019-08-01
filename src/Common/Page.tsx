@@ -12,6 +12,7 @@ export class Page extends React.Component<any, any> {
             <>
                 <div className='page-container'>
                     <div className='page-header'>{this.props.title}</div>
+                    {/*<div className='page-header-fade'></div>*/}
                     <div className='page-content'>{this.props.children}</div>
                 </div>
             </>
