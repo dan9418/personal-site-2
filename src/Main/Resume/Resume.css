@@ -22,7 +22,8 @@
     font-size: 18px;
 }
 
-.resume-position-header-date, .resume-position-header-location {
+.resume-position-header-date,
+.resume-position-header-location {
     position: absolute;
     right: 0;
     top: 0;
@@ -30,6 +31,7 @@
     font-size: 16px;
 }
 
+.resume-position-header-date svg,
 .resume-position-header-location svg {
 	height: 16px;
     width: 16px;
@@ -38,6 +40,7 @@
     fill: #333;
 }
 
+.resume-position-header-date svg *,
 .resume-position-header-location svg * {
     fill: #333;
 }

@@ -15,20 +15,22 @@
 }
 
 .album-link-container {
-    height: 50px;
-    margin: 10px;
+
 }
 
 .album-link-container svg {
-    height: 35px;
-    width: 35;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 30px;
+    margin: 10px;
 }
 
 .album-link-container svg, .album-link-container svg * {
     fill: #444;
 }
+
+.album-link-container svg:hover, .album-link-container svg:hover * {
+    fill: #888;
+}
+
 
 .album-content {
 

@@ -13,7 +13,7 @@ export class ResumePositionHeader extends React.Component<any, any> {
 			<div className='resume-position-header'>
 				<div className='resume-position-header-top'>
 					<div className='resume-position-header-company'>{this.props.company}</div>
-					<div className='resume-position-header-date'>{this.props.date}</div>
+					<div className='resume-position-header-date'>{ICONS.calendar}{this.props.date}</div>
 				</div>
 				<div className='resume-position-header-bottom'>
 					<div className='resume-position-header-title'>{this.props.title}</div>
