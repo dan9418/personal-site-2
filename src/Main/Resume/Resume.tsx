@@ -45,6 +45,31 @@ export class ResumeDetail extends React.Component<any, any> {
 	};
 }
 
+export class ResumeKeySkills extends React.Component<any, any> {
+
+	constructor(props) {
+		super(props);
+	}
+
+	getSkills = () => {
+		let skills = [];
+		for (let i = 0; i < this.props.skills.length; i++) {
+			let skill = this.props.skills[i];
+			skills.push(<div key={i} className='resume-key-skill'>{skill}</div>)
+		}
+		return skills;
+	}
+
+	render = () => {
+		return (
+			<div className='resume-key-skills-container'>
+				<div className='resume-key-skills-header'>Key Skills:</div>
+				{this.getSkills()}
+			</div>
+		);
+	};
+}
+
 export class Resume extends React.Component<any, any> {
 
 	constructor(props) {
@@ -76,6 +101,8 @@ export class Resume extends React.Component<any, any> {
 						<ResumeDetail>Oversaw major feature development from design through deployment</ResumeDetail>
 						<ResumeDetail>Employed best practices regarding testing, bug-tracking, and technology research.</ResumeDetail>
 						<ResumeDetail>Worked in highly cooperative agile environments using Scrum and Kanban, both on-site and remotely</ResumeDetail>
+					
+						<ResumeKeySkills skills={['Web Dev','Databases','Microsoft Stack']}/>
 					</PageSection>
 
 					<PageSection
@@ -88,6 +115,8 @@ export class Resume extends React.Component<any, any> {
 						<ResumeDetail>Syncronized data across DB2 databases to form single, consistent schema</ResumeDetail>
 						<ResumeDetail>Automated daily data comparisons to maintain a central Reference Data Hub</ResumeDetail>
 						<ResumeDetail>Worked with partitioned MVS/Linux mainframe to integrate disparate datasources</ResumeDetail>
+					
+						<ResumeKeySkills skills={['Java','SQL','IBM Stack']}/>
 					</PageSection>
 
 					<PageSection
@@ -100,6 +129,8 @@ export class Resume extends React.Component<any, any> {
 						<ResumeDetail>Managed 57 freshmen engineering residents</ResumeDetail>
 						<ResumeDetail>Enforced community standards for diverse student pool</ResumeDetail>
 						<ResumeDetail>Organized large-scale social, educational, and experiential programs</ResumeDetail>
+
+						<ResumeKeySkills skills={['Leadership','Communication','Mediation']}/>
 					</PageSection>
 
 				</PageSection>
