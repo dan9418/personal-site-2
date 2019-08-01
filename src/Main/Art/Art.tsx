@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Art.css";
 import { Gallery, GalleryProps } from "./Gallery/Gallery";
-import { PageSection } from "../../Common/Headers";
+import { PageSection, PrimaryHeader } from "../../Common/Headers";
 
 export class Art extends React.Component<any, any> {
 
@@ -277,11 +277,17 @@ export class Art extends React.Component<any, any> {
 	}
 
 	getGalleries = () => {
-		<Gallery name='Tattoos' description='Some tattoos.' images={[]} />
 		let galleries = [];
 		for (let i = 0; i < Art.GALLERY_CONFIG.length; i++) {
 			let gallery = Art.GALLERY_CONFIG[i];
-			galleries.push(<Gallery key={gallery.name} {...gallery} />);
+			galleries.push(
+				<>
+					<PageSection header={<PrimaryHeader title={gallery.name} />}>
+						<p className='gallery-description'>{gallery.description}</p>
+						<Gallery key={gallery.name} {...gallery} />
+					</PageSection>
+				</>
+			);
 		}
 		return galleries;
 	}

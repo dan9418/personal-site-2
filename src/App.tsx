@@ -38,7 +38,7 @@ export class App extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this.state = {
-            page: App.PAGES[2]
+            page: App.PAGES[3]
         }
     }
 
