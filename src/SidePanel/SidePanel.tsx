@@ -25,6 +25,22 @@ export class SidePanel extends React.Component<any, any> {
 		return pageLinks;
 	}
 
+	getExternalLinks = () => {
+		let externalLinks = [];
+		for (let i = 0; i < this.props.links.length; i++) {
+			let link = this.props.links[i];
+			externalLinks.push(
+				<SidePanelLink
+					key={i}
+					link={link.link}
+					text={link.name}
+					icon={ICONS[link.id]}
+					hoverIcon={ICONS.newtab}
+				/>)
+		}
+		return externalLinks;
+	}
+
 	render = () => {
 		return (
 			<div className='side-panel'>
@@ -42,9 +58,7 @@ export class SidePanel extends React.Component<any, any> {
 				</div>
 				<div className='side-panel-section'>
 					<div className='side-panel-section-header' />
-					<SidePanelLink text='LinkedIn' icon={ICONS.linkedin} hoverIcon={ICONS.newtab} />
-					<SidePanelLink text='GitHub' icon={ICONS.github} hoverIcon={ICONS.newtab} />
-					<SidePanelLink text='Bandcamp' icon={ICONS.bandcamp} hoverIcon={ICONS.newtab} />
+					{this.getExternalLinks()}
 				</div>
 			</div>
 		);

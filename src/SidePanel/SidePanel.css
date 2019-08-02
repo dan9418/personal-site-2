@@ -11,6 +11,11 @@
     overflow: auto;
 }
 
+.side-panel a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Photo */
 
 .side-panel-pic-container {

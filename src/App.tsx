@@ -34,6 +34,24 @@ export class App extends React.Component<any, any> {
         }
     ]
 
+    static LINKS = [
+        {
+            id: 'linkedin',
+            name: 'LinkedIn',
+            link: 'https://www.linkedin.com/in/danielbednarczyk/'
+        },
+        {
+            id: 'github',
+            name: 'GitHub',
+            link: 'https://github.com/dan9418/'
+        },
+        {
+            id: 'bandcamp',
+            name: 'Bandcamp',
+            link: 'https://atlaseuphoria.bandcamp.com/'
+        }
+    ]
+
     constructor(props) {
         super(props);
         this.state = {
@@ -51,7 +69,7 @@ export class App extends React.Component<any, any> {
         let PageComponent = this.state.page.component;
         return (
             <>
-                <SidePanel pages={App.PAGES} activePage={this.state.page} setActivePage={this.setActivePage}/>
+                <SidePanel pages={App.PAGES} links={App.LINKS} activePage={this.state.page} setActivePage={this.setActivePage}/>
                 <Page title={this.state.page.name}>{<PageComponent></PageComponent>}</Page>
             </>
         );

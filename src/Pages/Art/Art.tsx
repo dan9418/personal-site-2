@@ -282,7 +282,7 @@ export class Art extends React.Component<any, any> {
 			let gallery = Art.GALLERY_CONFIG[i];
 			galleries.push(
 				<>
-					<PageSection header={<PrimaryHeader title={gallery.name} />}>
+					<PageSection key={i} header={<PrimaryHeader title={gallery.name} />}>
 						<p className='gallery-description'>{gallery.description}</p>
 						<Gallery key={gallery.name} {...gallery} />
 					</PageSection>
