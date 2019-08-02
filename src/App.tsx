@@ -8,7 +8,6 @@ import { Code } from "./Pages/Code/Code";
 import { Music } from "./Pages/Music/Music";
 import { Art } from "./Pages/Art/Art";
 import { Page } from "./Common/Page";
-import { PageSection } from "./Common/Headers";
 
 export class App extends React.Component<any, any> {
 
@@ -38,7 +37,7 @@ export class App extends React.Component<any, any> {
     constructor(props) {
         super(props);
         this.state = {
-            page: App.PAGES[1]
+            page: App.PAGES[3]
         }
     }
 

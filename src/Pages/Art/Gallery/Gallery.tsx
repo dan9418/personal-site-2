@@ -60,7 +60,7 @@ export class Gallery extends React.Component<GalleryProps, GalleryState> {
 						<div className='gallery-main-nav-button' onClick={() => this.navigate(1)}>⯈</div>
 					</div>
 				</div>
-				<div className='gallery-content-caption'>{main.caption}</div>
+				<div className='gallery-content-caption'>{main.caption + ' (' + (this.state.index + 1) + '/' + this.props.images.length + ')'}</div>
 			</div>
 		);
 	};

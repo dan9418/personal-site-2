@@ -11,75 +11,75 @@ export class Art extends React.Component<any, any> {
 			description: 'Artwork for various musical projects',
 			images: [
 				{
-					name: 'Silent City',
+					name: 'Silent City (Front)',
 					year: 2017,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/silent_city.jpg'
 				},
 				{
-					name: 'Silent City',
+					name: 'Silent City (Back)',
 					year: 2017,
-					caption: 'Back Cover',
+					caption: '',
 					path: './img/galleries/albums/silent_city_back.jpg'
 				},
 				{
 					name: 'Need Not',
 					year: 2018,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/need_not.jpg'
 				},
 				{
 					name: 'Peanut Butter Jam',
 					year: 2016,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/peanut_butter_jam.jpg'
 				},
 				{
-					name: 'Songs; And How NOT To Write Them!',
+					name: 'Songs; And How NOT To Write Them! (Front)',
 					year: 2015,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/songs_and_how_not_to_write_them.jpg'
 				},
 				{
-					name: 'Songs; And How NOT To Write Them!',
+					name: 'Songs; And How NOT To Write Them! (Back)',
 					year: 2015,
-					caption: 'Back Cover',
+					caption: '',
 					path: './img/galleries/albums/songs_and_how_not_to_write_them_back.jpg'
 				},
 				{
 					name: 'Yellow Snow',
 					year: 2015,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/yellow_snow.jpg'
 				},
 				{
 					name: 'Human Architecture',
 					year: 2017,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/human_architecture.jpg'
 				},
 				{
-					name: 'Mac DeMarco Covers',
+					name: 'Mac DeMarco Covers (Parody)',
 					year: 2017,
-					caption: 'Parody of Mac DeMarco\'s album \'2\'',
+					caption: '',
 					path: './img/galleries/albums/mac_demarco_covers.jpg'
 				},
 				{
 					name: 'Out Of Reach',
 					year: 2011,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/out_of_reach.jpg'
 				},
 				{
 					name: 'String',
 					year: 2017,
-					caption: 'Single artwork commissioned by Indigo Zoo',
+					caption: '',
 					path: './img/galleries/albums/string.jpg'
 				},
 				{
 					name: 'Of Dreams',
 					year: 2017,
-					caption: 'Front Cover',
+					caption: '',
 					path: './img/galleries/albums/of_dreams.jpg'
 				}
 			]
@@ -91,151 +91,151 @@ export class Art extends React.Component<any, any> {
 				{
 					name: 'Chesterfield Street',
 					year: 2015,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/filters/chesterfield.png'
 				},
 				{
 					name: 'WPTS Radio',
 					year: 2015,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/filters/wpts.png'
 				},
 				{
 					name: 'Ward Street',
 					year: 2016,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/filters/ward.png'
 				},
 				{
-					name: 'Pitt',
+					name: 'Pitt Residence Halls',
 					year: 2015,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/filters/pitt.jpg'
 				}
 			]
 		},
 		{
 			name: 'Just For Fun',
-			description: 'Some pieces indulging my goofy sense of humor',
+			description: 'Some fun pieces indulging my goofy sense of humor',
 			images: [
 				{
 					name: 'Angels & Demons',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/angel_demon.jpg'
 				},
 				{
 					name: 'CEO Bednarczyk',
 					year: 2013,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/ceo.jpg'
 				},
 				{
 					name: 'Stalemate',
 					year: 2017,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/chess.jpg'
 				},
 				{
 					name: 'Dolla Dolla Bill Y\'all',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/dollar.jpg'
 				},
 				{
 					name: 'The Godfather Parody',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/godfather.jpg'
 				},
 				{
 					name: 'Hostage',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/hostage.jpg'
 				},
 				{
 					name: 'My Good Friend Jimmy',
 					year: 2014,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/jimmy_fallon.jpg'
 				},
 				{
 					name: 'MiniMe',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/minime.jpg'
 				},
 				{
 					name: 'Have You Seen Me?',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/missing_fridge.jpg'
 				},
 				{
 					name: 'Multitasking',
 					year: 2009,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/multitasking.jpg'
 				},
 				{
 					name: 'The Simpsons Parody',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/simpsons.jpg'
 				},
 				{
 					name: 'Skydiving',
 					year: 2011,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/personal/skydiving.jpg'
 				},
 				{
-					name: 'Painted',
+					name: 'Painted (Green Day Parody)',
 					year: 2011,
-					caption: 'Inspired by the album art for Green Day\'s album "Shenanigans"',
+					caption: '',
 					path: './img/galleries/personal/spray_paint.jpg'
 				},
 				{
 					name: 'Digital World',
 					year: 2012,
-					caption: 'Help?',
+					caption: '',
 					path: './img/galleries/personal/tv.jpg'
 				}
 			]
 		},
 		{
 			name: 'T-Shirts',
-			description: 'Some shirts I designed throughout college',
+			description: 'Some shirts I designed in college',
 			images: [
 				{
 					name: 'E-Week: Harry Potter',
 					year: 2014,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/shirts/harry_potter.jpg'
 				},
 				{
 					name: 'E-Week: Hunger Games',
 					year: 2015,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/shirts/hunger_games.jpg'
 				},
 				{
 					name: 'E-Week: Freshmen Crest',
 					year: 2014,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/shirts/freshmen.jpg'
 				},
 				{
 					name: 'E-Week: Pixar',
 					year: 2017,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/shirts/pixar.jpg'
 				},
 				{
 					name: 'The Panther Pitt',
 					year: 2016,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/shirts/panther_pitt.jpg'
 				}
 			]
@@ -247,25 +247,25 @@ export class Art extends React.Component<any, any> {
 				{
 					name: 'Nature Arm Band',
 					year: 2017,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/tattoos/lost_is_found.jpg'
 				},
 				{
 					name: 'Harmonic Series',
 					year: 2019,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/tattoos/harmonic_series.png'
 				},
 				{
 					name: 'Binary Cross',
 					year: 2015,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/tattoos/binary_cross.png'
 				},
 				{
 					name: 'Bike',
 					year: 2018,
-					caption: '...',
+					caption: '',
 					path: './img/galleries/tattoos/bike.png'
 				}
 			]
@@ -296,7 +296,17 @@ export class Art extends React.Component<any, any> {
 		return (
 			<>
 				<PageSection>
-					<p>I love art in its many forms - I enjoy drawing and painting, but have mostly been drawn to graphic design. I have done lots of artwork over the years, including work for universities, clubs, and all of my musical projects. My galleries are available below.</p>
+					<p>
+						I love art in its many forms, both as a creator and a fan.
+						I enjoy drawing and photography, but I'm especially passionate about graphic design.
+						I have done freelance work for over a decade, including projects comissioned by universities and clubs in addition to all of my personal music projects and tattoos.
+					</p>
+					<p>
+						Some of my pieces are featured below.
+					</p>
+					<p className='italic'>
+						(page still under construction)
+					</p>
 				</PageSection>
 				{this.getGalleries()}
 			</>
