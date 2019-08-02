@@ -43,6 +43,7 @@
 .album-art {
     height: 250px;
     width: 250px;
+    box-shadow: 1px 1px 10px #AAA;
 }
 
 .album-tracklist {

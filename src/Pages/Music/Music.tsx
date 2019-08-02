@@ -84,7 +84,7 @@ export class Music extends React.Component<any, any> {
 		},
 		{
 			name: 'The Vectors',
-			description: `The Vectors were my band in college, intended as a comedic, dormroom exploration of the ska genre.`,
+			description: `The Vectors were my band in college, intended as a comedic dormroom exploration of the ska genre.`,
 			links: [
 				{
 					name: 'SoundCloud',
