@@ -243,16 +243,18 @@ export class Music extends React.Component<any, any> {
 			albums.push(
 				<PageSection header={<PrimaryHeader title={category.name} key={category.name + i} />}>
 					<p>{category.description}</p>
-					<div className='category-links'>
-						<div className='category-links-header'>
-							{category.name + ' on social media:'}
+					{category.links && category.links.length &&
+						<div className='category-links'>
+							<div className='category-links-header'>
+								{category.name + ' on social media:'}
+							</div>
+							{
+								category.links.map((link, index) => {
+									return <a key={index} href={link.link} target='_blank'>{ICONS[link.icon]}</a>
+								})
+							}
 						</div>
-						{category.links &&
-							category.links.map((link, index) => {
-								return <a key={index} href={link.link} target='_blank'>{ICONS[link.icon]}</a>
-							})
-						}
-					</div>
+					}
 					<>{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}</>
 				</PageSection>
 			);

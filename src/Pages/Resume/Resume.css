@@ -73,7 +73,7 @@
 
 .resume-skills-container {
     display: inline-block;
-    width: 20%;
+    width: 30%;
     min-width: 100px;
     vertical-align: top;
     margin: 10px;
@@ -83,7 +83,7 @@
 
 .resume-skills-container-header {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .resume-skill {
@@ -101,6 +101,7 @@
 .resume-key-skills-header {
     padding: 5px;
     margin: 10px;
+    font-size: 18px;
     font-weight: bold;
     display: inline-block;
 }

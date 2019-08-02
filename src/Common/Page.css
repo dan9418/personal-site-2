@@ -6,7 +6,8 @@
 	left: 200px;
 	right: 0;
 	bottom: 0;
-	overflow: auto;
+    overflow: auto;
+    padding-bottom: 100px;
 }
 
 .page-header {
