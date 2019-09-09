@@ -81,7 +81,7 @@ export class Resume extends React.Component<any, any> {
 			<>
 				<PageSection header={<PrimaryHeader title='Professional Summary' />}>
 					<p>
-						I'm a highly-motivated, full-stack web developer relocating from Pittsburgh, PA to Northern California.
+						I'm a full-stack web developer relocating from Pittsburgh, PA to the west coast.
 						I am seeking a position where I can apply my diverse technical background to one of my many passions, which include agriculture, environmentalism, music, fitness, and community development.
 					</p>
 				</PageSection>
@@ -160,6 +160,7 @@ export class Resume extends React.Component<any, any> {
 						<div className='resume-skill'>React</div>
 						<div className='resume-skill'>Angular 5 / AngularJS</div>
 						<div className='resume-skill'>C# / .NET</div>
+						<div className='resume-skill'>REST / HTTP</div>
 						<div className='resume-skill'>Jasmine/Karma/Mocha Testing</div>
 						<div className='resume-skill'>HTML5</div>
 						<div className='resume-skill'>CSS</div>
@@ -168,7 +169,7 @@ export class Resume extends React.Component<any, any> {
 					<div className='resume-skills-container'>
 						<div className='resume-skills-container-header'>Other Languages, etc...</div>
 						<div className='resume-skill'>SQL</div>
-						<div className='resume-skill'>NodeJS</div>
+						<div className='resume-skill'>Node</div>
 						<div className='resume-skill'>C++</div>
 						<div className='resume-skill'>Java</div>
 						<div className='resume-skill'>Android SDK</div>
@@ -189,8 +190,8 @@ export class Resume extends React.Component<any, any> {
 				<PageSection header={<PrimaryHeader title='Projects' />}>
 
 					<PageSection header={<SecondaryHeader title='Web Apps' />}>
-						<ResumeDetail>Currently developing a configurable, extensible music theory visualization tool in React and TypeScript</ResumeDetail>
-						<ResumeDetail>Developed this website in React, TypeScript, and pure CSS</ResumeDetail>
+						<ResumeDetail>Developed <a href='https://dan9418.github.io/play-what-sample/' target='_blank'>Play What</a>, a React library and framework for visualing music theory concepts</ResumeDetail>
+						<ResumeDetail>Developed this portfolio site from scratch</ResumeDetail>
 						<ResumeDetail>Served as college webmaster for The Aquaponics Project and Sailing Club</ResumeDetail>
 					</PageSection>
 
