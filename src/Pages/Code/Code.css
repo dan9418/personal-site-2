@@ -18,3 +18,26 @@
     margin-right: 5px;
     text-decoration: none;
 }
+
+/* Play What */
+
+.play-what-title {
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px;
+}
+
+.play-what-input {
+    padding: 5px;
+}
+
+.play-what-input-label {
+    margin: 5px;
+    display: inline-block;
+}
+
+.play-what-input-dropdown {
+    margin: 5px;
+    display: inline-block;
+    min-width: 150px;
+}

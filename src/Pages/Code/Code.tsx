@@ -2,6 +2,7 @@ import * as React from "react";
 import "./Code.css";
 import { PageSection, PrimaryHeader, SecondaryHeader } from "../../Common/Headers";
 import { Gallery } from "../Art/Gallery/Gallery";
+import { PlayWhatDemo } from "./PlayWhatDemo";
 
 export class Code extends React.Component<any, any> {
 
@@ -23,6 +24,9 @@ export class Code extends React.Component<any, any> {
 							<p>
 								Examples and interactive documentation can be found on the <a href='https://dan9418.github.io/play-what-sample/' target='_blank'>project site</a>.
 							</p>
+
+							<PlayWhatDemo />
+
 						</PageSection>
 
 						<PageSection header={<SecondaryHeader title={'Portfolio Site'} />}>
