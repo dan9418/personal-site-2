@@ -1,8 +1,6 @@
 import * as React from "react";
 import "./Art.css";
 import { Gallery, GalleryProps } from "./Gallery/Gallery";
-import { PrimaryHeader } from "../../Common/Headers";
-import { PageSection } from "../../Common/Page";
 
 const GALLERY_CONFIG: GalleryProps[] = [
 	{
@@ -276,10 +274,11 @@ function getGalleries() {
 	for (let i = 0; i < GALLERY_CONFIG.length; i++) {
 		let gallery = GALLERY_CONFIG[i];
 		galleries.push(
-			<PageSection key={i} header={<PrimaryHeader title={gallery.name} />}>
+			<div key={i}>
+				<h2>{gallery.name}</h2>
 				<p className='gallery-description'>{gallery.description}</p>
 				<Gallery key={gallery.name} {...gallery} />
-			</PageSection>
+			</div>
 		);
 	}
 	return galleries;
@@ -287,7 +286,7 @@ function getGalleries() {
 
 export function Art(props) {
 	return (
-		<PageSection>
+		<div>
 			<p>
 				I love art in its many forms, both as a creator and a fan.
 				I enjoy drawing and photography, but I'm especially passionate about graphic design.
@@ -301,6 +300,6 @@ export function Art(props) {
 			<p className='italic'>(page still under construction)</p>
 
 			{getGalleries()}
-		</PageSection>
+		</div>
 	);
 }

@@ -1,8 +1,6 @@
 import * as React from "react";
 import "./Resume.css";
 import { ICONS } from "../../Common/Icon";
-import { SecondaryHeader, PrimaryHeader } from "../../Common/Headers";
-import { PageSection } from "../../Common/Page";
 
 function ResumePositionHeader(props) {
 	return (
@@ -56,22 +54,23 @@ export function Resume(props) {
 
 	return (
 		<>
-			<PageSection header={<PrimaryHeader title='Professional Summary' />}>
+			<div>
+				<h2>Professional Summary</h2>
 				<p>
 					I'm a full-stack web developer relocating from Pittsburgh, PA to the west coast.
 					I am seeking a position where I can apply my diverse technical background to one of my many passions, which include agriculture, environmentalism, music, fitness, and community development.
 					</p>
-			</PageSection>
+			</div>
 
-			<PageSection header={<PrimaryHeader title='Work Experience' />}>
-
-				<PageSection
-					header={<ResumePositionHeader
+			<div>
+				<h2>Work Experience</h2>
+				<div>
+					<ResumePositionHeader
 						company='Bentley Systems'
 						title='Associate Software Engineer'
 						date='May 2016 - July 2019'
 						location='Pittsburgh, PA + Vilnius, LT'
-					/>}>
+					/>
 					<ResumeDetail>Completed rotational program spanning 5 teams over 3 years</ResumeDetail>
 					<ResumeDetail>Selected for inaugural international program in Vilnius, Lithuania</ResumeDetail>
 					<ResumeDetail>Served many roles as a full-stack developer on various web APIs and applications</ResumeDetail>
@@ -80,56 +79,57 @@ export function Resume(props) {
 					<ResumeDetail>Worked in highly cooperative agile environments using Scrum and Kanban, both on-site and remotely</ResumeDetail>
 
 					<ResumeKeySkills skills={['Web Dev', 'Feature Ownership', 'Microsoft Tech Stack']} />
-				</PageSection>
+				</div>
 
-				<PageSection
-					header={<ResumePositionHeader
+				<div>
+					<ResumePositionHeader
 						company='The Bank of New York Mellon'
 						title='Software Engineer Intern'
 						date='May 2015 – August 2015'
 						location='Pittsburgh, PA'
-					/>}>
+					/>
 					<ResumeDetail>Syncronized data across databases to form single, consistent schema</ResumeDetail>
 					<ResumeDetail>Automated daily data comparisons to maintain a central Reference Data Hub</ResumeDetail>
 					<ResumeDetail>Worked with partitioned MVS/Linux mainframe to integrate disparate datasources</ResumeDetail>
 
 					<ResumeKeySkills skills={['Java', 'Database Management', 'IBM Tech Stack']} />
-				</PageSection>
+				</div>
 
-				<PageSection
-					header={<ResumePositionHeader
+				<div>
+					<ResumePositionHeader
 						company='University of Pittsburgh, Residence Life'
 						title='Resident Assistant'
 						date='August 2014 - December 2015'
 						location='Pittsburgh, PA'
-					/>}>
+					/>
 					<ResumeDetail>Managed 57 freshmen engineering residents</ResumeDetail>
 					<ResumeDetail>Enforced community standards for diverse pool of students</ResumeDetail>
 					<ResumeDetail>Organized large-scale social, educational, and experiential programs</ResumeDetail>
 
 					<ResumeKeySkills skills={['Leadership', 'Communication', 'Event Planning']} />
-				</PageSection>
+				</div>
 
-			</PageSection>
+			</div>
 
-			<PageSection header={<PrimaryHeader title='Education' />}>
-
-				<PageSection
-					header={<ResumePositionHeader
+			<div>
+				<h2>Education</h2>
+				<div>
+					<ResumePositionHeader
 						company='University of Pittsburgh, Swanson School of Engineering'
 						title='BS, Computer Engineering'
 						date='April 2017'
 						location='Pittsburgh, PA'
-					/>}>
+					/>
 					<ResumeDetail>Graduated with 3.71 GPA and special distinction as the Outstanding Senior in departmental class</ResumeDetail>
 					<ResumeDetail>Won 2nd place at departmental senior design expo for augmented reality project</ResumeDetail>
 					<ResumeDetail>Won 1st place for freshmen computer engineering conference paper on hybrid drives</ResumeDetail>
 					<ResumeDetail>Served as Engineering Week Chairman for Engineering Student Council</ResumeDetail>
-				</PageSection>
+				</div>
 
-			</PageSection>
+			</div>
 
-			<PageSection header={<PrimaryHeader title='Technical Skills' />}>
+			<div>
+				<h2>Technical Skills</h2>
 				<div className='resume-skills-container'>
 					<div className='resume-skills-container-header'>Web</div>
 					<div className='resume-skill'>JavaScript</div>
@@ -162,42 +162,37 @@ export function Resume(props) {
 					<div className='resume-skill'>SQL Server</div>
 					<div className='resume-skill'>Oracle</div>
 				</div>
-			</PageSection>
+			</div>
 
-			<PageSection header={<PrimaryHeader title='Projects' />}>
-
-				<PageSection header={<SecondaryHeader title='Web Apps' />}>
+			<div>
+				<h2>Projects</h2>
+				<div>
+					<h3>Web Apps</h3>
 					<ResumeDetail>Developed <a href='https://dan9418.github.io/play-what-sample/' target='_blank'>Play What</a>, a React library and framework for visualing music theory concepts</ResumeDetail>
 					<ResumeDetail>Developed this portfolio site from scratch</ResumeDetail>
 					<ResumeDetail>Served as college webmaster for The Aquaponics Project and Sailing Club</ResumeDetail>
-				</PageSection>
+				</div>
 
-				<PageSection header={<SecondaryHeader title='Android Apps' />}>
+				<div>
+					<h3>Android Apps</h3>
 					<ResumeDetail>Developed an "augmented reality dashboard" app to recognize and communicate with electrical switchgear (senior design project)</ResumeDetail>
 					<ResumeDetail>Developed a boolean algebra calculator</ResumeDetail>
 					<ResumeDetail>Developed several smaller apps at college hackathons</ResumeDetail>
-				</PageSection>
+				</div>
 
-				<PageSection header={<SecondaryHeader title='Controlled Environment Agriculture' />}>
+				<div>
+					<h3>Controlled Environment Agriculture</h3>
 					<ResumeDetail>Assisted in design and construction of several tech-supplemented hydroponic gardening systems</ResumeDetail>
 					<ResumeDetail>Investigated hydroponic produce facility business potential for Lean LaunchPad college course</ResumeDetail>
-				</PageSection>
+				</div>
 
-				<PageSection header={<SecondaryHeader title='Music' />}>
+				<div>
+					<h3>Music</h3>
 					<ResumeDetail>Completed dozens of musical projects as a multiinstrumentalist, producer, and songwriter</ResumeDetail>
 					<ResumeDetail>Studied audio engineering in the University of Pittsburgh Music Engineering Laboratory</ResumeDetail>
-				</PageSection>
+				</div>
 
-			</PageSection>
-
-			{/*<PageSection header={<PrimaryHeader title='Hobbies' />}>
-
-					<PageSection header={<SecondaryHeader title='Bicycling' />}>
-						<ResumeDetail>Featured on BikePGH's blog to promote year-end campaign</ResumeDetail>
-						<ResumeDetail>Completed 62-mile PedalPGH course</ResumeDetail>
-					</PageSection>
-
-				</PageSection>*/}
+			</div>
 		</>
 	);
 }

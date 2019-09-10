@@ -1,8 +1,6 @@
 import * as React from "react";
 import "./Album.css";
 import { ICONS } from "../../../Common/Icon";
-import { SecondaryHeader } from "../../../Common/Headers";
-import { PageSection } from "../../../Common/Page";
 
 export interface IconLink {
 	name: string;
@@ -49,7 +47,8 @@ function getAlbumTracks(props) {
 
 export function Album(props: AlbumProps) {
 	return (
-		<PageSection header={< SecondaryHeader title={props.title + ' (' + props.year + ')'} />}>
+		<div>
+			<h3>{props.title + ' (' + props.year + ')'}</h3>
 			<p className='album-summary'>{props.summary}</p>
 			<div className='album-content'>
 				<div className='album-art-container'>
@@ -58,6 +57,6 @@ export function Album(props: AlbumProps) {
 				</div>
 				<div className='album-tracklist'>{getAlbumTracks(props)}</div>
 			</div>
-		</PageSection >
+		</div>
 	);
 }

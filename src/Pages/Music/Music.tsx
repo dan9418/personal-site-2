@@ -1,9 +1,7 @@
 import * as React from "react";
 import "./Music.css";
 import { AlbumProps, Album, IconLink } from "./Album/Album";
-import { PrimaryHeader } from "../../Common/Headers";
 import { ICONS } from "../../Common/Icon";
-import { PageSection } from "../../Common/Page";
 
 interface AlbumCategory {
 	name: string;
@@ -236,7 +234,8 @@ function getAlbums() {
 	for (let i = 0; i < ALBUM_CONFIG.length; i++) {
 		let category = ALBUM_CONFIG[i];
 		albums.push(
-			<PageSection header={<PrimaryHeader title={category.name} key={category.name + i} />}>
+			<div key={category.name + i}>
+				<h2>{category.name}</h2>
 				<p>{category.description}</p>
 				{category.links && category.links.length &&
 					<div className='category-links'>
@@ -251,7 +250,7 @@ function getAlbums() {
 					</div>
 				}
 				{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}
-			</PageSection>
+			</div>
 		);
 	}
 	return albums;
@@ -259,7 +258,7 @@ function getAlbums() {
 
 export function Music(props) {
 	return (
-		<PageSection>
+		<div>
 			<p>
 				Music is one of my greatest passions - I love experimenting with new instruments, genres, sounds, and production techniques.
 				Most of my music is guitar-based, but I also play some bass, drums, piano, and trombone.
@@ -272,6 +271,6 @@ export function Music(props) {
 			</p>
 
 			{getAlbums()}
-		</PageSection>
+		</div>
 	);
 }

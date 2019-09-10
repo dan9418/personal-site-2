@@ -1,16 +1,18 @@
 import * as React from "react";
 import "./Code.css";
-import { PrimaryHeader, SecondaryHeader } from "../../Common/Headers";
 import { Gallery } from "../Art/Gallery/Gallery";
 import { PlayWhatDemo } from "./PlayWhatDemo";
-import { PageSection } from "../../Common/Page";
 
 export function Code(props) {
 
 	return (
-		<PageSection>
-			<PageSection header={<PrimaryHeader title={'Web Apps'} />}>
-				<PageSection header={<SecondaryHeader title={'Play What'} />}>
+		<div>
+			<div>
+				<h2>Web Apps</h2>
+
+				<div>
+					<h3>Play What</h3>
+
 					<p>
 						Play What is a React component library and framework I developed for visualizing music theory concepts.
 						It provides a simple API for configuring viewer components and creating your own.
@@ -22,26 +24,28 @@ export function Code(props) {
 
 					<PlayWhatDemo />
 
-				</PageSection>
+				</div>
 
-				<PageSection header={<SecondaryHeader title={'Portfolio Site'} />}>
+				<div>
+					<h3>Portfolio Site</h3>
 					<p>
 						I have been maintaining a personal website since my freshman year of college.
 						I use my site as a sandbox to learn new technologies and keep a portfolio of my projects.
 						The current iteration is powered by React, TypeScript, and pure CSS.
 					</p>
-				</PageSection>
-			</PageSection>
+				</div>
+			</div>
 
-			<PageSection header={<PrimaryHeader title={'Mobile Apps'} />}>
-
-				<PageSection header={<SecondaryHeader title={'Augmented Reality Dashboard'} />}>
+			<div>
+				<h2>Mobile Apps</h2>
+				<div>
+					<h3>Augmented Reality Dashboard</h3>
 					<p>
 						My most recent mobile app was an
-								<span className='italic'> augmented reality dashboard</span>,
-				developed for my senior design project at Pitt.
-				It was sponsored by
-								<a className='code-link' href='https://www.eaton.com' target='_blank'>Eaton</a>
+						<span className='italic'> augmented reality dashboard</span>,
+						developed for my senior design project at Pitt.
+						It was sponsored by
+						<a className='code-link' href='https://www.eaton.com' target='_blank'>Eaton</a>
 						and won 2nd place at my department's design expo.
 					</p>
 
@@ -68,9 +72,11 @@ export function Code(props) {
 						]}
 					/>
 
-				</PageSection>
+				</div>
 
-				<PageSection header={<SecondaryHeader title={'Boolean Algebra Calculator'} />}>
+				<div>
+					<h3>Boolean Algebra Calculator</h3>
+
 					<p>
 						My first mobile project was an Android application for solving boolean expressions.
 						It is no longer on the app store, but I plan to modernize it and convert it to a web app someday.
@@ -95,9 +101,9 @@ export function Code(props) {
 						]}
 					/>
 
-				</PageSection>
+				</div>
 
-			</PageSection>
-		</PageSection>
+			</div>
+		</div>
 	);
 }
