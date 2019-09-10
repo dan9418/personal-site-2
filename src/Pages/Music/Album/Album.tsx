@@ -1,7 +1,8 @@
 import * as React from "react";
 import "./Album.css";
 import { ICONS } from "../../../Common/Icon";
-import { SecondaryHeader, PageSection } from "../../../Common/Headers";
+import { SecondaryHeader } from "../../../Common/Headers";
+import { PageSection } from "../../../Common/Page";
 
 export interface IconLink {
 	name: string;
@@ -28,42 +29,35 @@ export type AlbumProps = {
 	summary: string;
 }
 
-export class Album extends React.Component<AlbumProps, any> {
-
-	constructor(props) {
-		super(props);
+function getAlbumLinks(props) {
+	let links = [];
+	for (let i = 0; i < props.links.length; i++) {
+		let link = props.links[i];
+		links.push(<a key={i} href={link.link} target='_blank'>{ICONS[link.icon]}</a>);
 	}
+	return links;
+}
 
-	getLinks = () => {
-		let links = [];
-		for(let i = 0; i < this.props.links.length; i++) {
-			let link = this.props.links[i];
-			links.push(<a key={i} href={link.link} target='_blank'>{ICONS[link.icon]}</a>);
-		}
-		return links;
+function getAlbumTracks(props) {
+	let tracks = [];
+	for (let i = 0; i < props.tracks.length; i++) {
+		let track = props.tracks[i];
+		tracks.push(<li className='album-track' key={i}>{track.title}<span className='album-track-note'>{track.note}</span></li>)
 	}
+	return <ol>{tracks}</ol>;
+}
 
-	getTracks = () => {
-		let tracks = [];
-		for(let i = 0; i < this.props.tracks.length; i++) {
-			let track = this.props.tracks[i];
-			tracks.push(<li className='album-track' key={i}>{track.title}<span className='album-track-note'>{track.note}</span></li>)
-		}
-		return <ol>{tracks}</ol>;
-	}
-
-	render = () => {
-		return (
-			<PageSection header={<SecondaryHeader title={this.props.title + ' (' + this.props.year + ')'}/>}>
-				<p className='album-summary'>{this.props.summary}</p>
-				<div className='album-content'>
-					<div className='album-art-container'>
-						<img className='album-art' src={this.props.art.path} alt={this.props.art.name}/>
-						<div className='album-link-container'>{this.getLinks()}</div>
-					</div>
-					<div className='album-tracklist'>{this.getTracks()}</div>
+export function Album(props: AlbumProps) {
+	return (
+		<PageSection header={< SecondaryHeader title={props.title + ' (' + props.year + ')'} />}>
+			<p className='album-summary'>{props.summary}</p>
+			<div className='album-content'>
+				<div className='album-art-container'>
+					<img className='album-art' src={props.art.path} alt={props.art.name} />
+					<div className='album-link-container'>{getAlbumLinks(props)}</div>
 				</div>
-			</PageSection>
-		);
-	};
+				<div className='album-tracklist'>{getAlbumTracks(props)}</div>
+			</div>
+		</PageSection >
+	);
 }

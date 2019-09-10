@@ -1,21 +1,20 @@
 import * as React from "react";
 import "./Page.css";
 
-export class Page extends React.Component<any, any> {
+export function Page(props) {
+    return (
+        <div className='page-container'>
+            <div className='page-header'>{props.title}</div>
+            <div className='page-content'>{props.children}</div>
+        </div>
+    );
+}
 
-    constructor(props) {
-        super(props);
-    }
-
-    render = () => {
-        return (
-            <>
-                <div className='page-container'>
-                    <div className='page-header'>{this.props.title}</div>
-                    {/*<div className='page-header-fade'></div>*/}
-                    <div className='page-content'>{this.props.children}</div>
-                </div>
-            </>
-        );
-    };
+export function PageSection(props) {
+    return (
+        <div className='page-section'>
+            <div className='page-section-header'>{props.header}</div>
+            <div className='page-section-content'>{props.children}</div>
+        </div>
+    );
 }
