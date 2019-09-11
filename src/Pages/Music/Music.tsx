@@ -236,12 +236,8 @@ function getAlbums() {
 		albums.push(
 			<div key={category.name + i}>
 				<h2>{category.name}</h2>
-				<p>{category.description}</p>
 				{category.links && category.links.length &&
 					<div className='category-links'>
-						<div className='category-links-header'>
-							{category.name + ' on social media:'}
-						</div>
 						{
 							category.links.map((link, index) => {
 								return <a key={index} href={link.link} target='_blank'>{ICONS[link.icon]}</a>
@@ -249,6 +245,7 @@ function getAlbums() {
 						}
 					</div>
 				}
+				<p className='category-description'>{category.description}</p>
 				{category.albums.map((album, index) => { return <Album key={album.title} {...album} />; })}
 			</div>
 		);
@@ -259,12 +256,12 @@ function getAlbums() {
 export function Music(props) {
 	return (
 		<div>
-			<p>
+			<p className='intro'>
 				Music is one of my greatest passions - I love experimenting with new instruments, genres, sounds, and production techniques.
 				Most of my music is guitar-based, but I also play some bass, drums, piano, and trombone.
 			</p>
 
-			<p>
+			<p className='intro'>
 				Beyond performing, I'm extremely interested in audio engineering, especially the creative use of unconventional sounds and textures in music.
 				While a student, I studied and recorded in Pitt's Music Engineering Laboratory.
 				I now have a modest home studio for recording myself and friends.

@@ -287,17 +287,14 @@ function getGalleries() {
 export function Art(props) {
 	return (
 		<div>
-			<p>
+			<p className='intro'>
 				I love art in its many forms, both as a creator and a fan.
 				I enjoy drawing and photography, but I'm especially passionate about graphic design.
 				I have done freelance work for over a decade, including projects comissioned by universities and clubs in addition to all of my personal music projects and tattoos.
+				Some of my work is featured below.
 			</p>
 
-			<p>
-				Some of my pieces are featured below.
-			</p>
-
-			<p className='italic'>(page still under construction)</p>
+			<div className='italic'>(page still under construction)</div>
 
 			{getGalleries()}
 		</div>

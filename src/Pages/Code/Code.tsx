@@ -58,15 +58,15 @@ export function Code(props) {
 						description='Senior design project'
 						images={[
 							{
-								name: '',
+								name: 'The App In Action',
 								year: null,
-								caption: 'The App In Action',
+								caption: '',
 								path: './img/galleries/apps/ard.jpg'
 							},
 							{
-								name: '',
+								name: 'My Team & Sponsor',
 								year: null,
-								caption: 'My Team & Sponsor',
+								caption: '',
 								path: './img/galleries/apps/eaton.jpg'
 							}
 						]}
@@ -87,15 +87,15 @@ export function Code(props) {
 						description=''
 						images={[
 							{
-								name: '',
+								name: 'Screenshot',
 								year: null,
-								caption: 'Screenshot',
+								caption: '',
 								path: './img/galleries/apps/bit_decryptor.jpg'
 							},
 							{
-								name: '',
+								name: 'Logo',
 								year: null,
-								caption: 'Logo',
+								caption: '',
 								path: './img/galleries/apps/bit_decryptor_logo.png'
 							}
 						]}

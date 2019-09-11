@@ -21,6 +21,10 @@
 
 /* Play What */
 
+.play-what-demo {
+    text-align: center;
+}
+
 .play-what-title {
     font-weight: bold;
     font-style: italic;

@@ -47,7 +47,7 @@ function getAlbumTracks(props) {
 
 export function Album(props: AlbumProps) {
 	return (
-		<div>
+		<div className='album'>
 			<h3>{props.title + ' (' + props.year + ')'}</h3>
 			<p className='album-summary'>{props.summary}</p>
 			<div className='album-content'>

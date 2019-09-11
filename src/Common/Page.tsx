@@ -3,9 +3,11 @@ import "./Page.css";
 
 export function Page(props) {
     return (
-        <div className='page-container'>
-            <h1 className='page-header'>{props.title}</h1>
-            <div className='page-content'>{props.children}</div>
+        <div className='page'>
+            <div className='page-content'>
+                <h1>{props.title}</h1>
+                {props.children}
+            </div>
         </div>
     );
 }

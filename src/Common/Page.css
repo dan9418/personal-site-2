@@ -1,8 +1,9 @@
-.page-container {
+.page {
     /* BACKGROUND_COLOR */
-    background-color: white;
+    background-color: #e1dedb;
+    color: #4A3932;
     
-    text-align: center;
+    text-align: left;
 
     overflow: auto;
 
@@ -15,12 +16,28 @@
 	bottom: 0;
 }
 
-.page-header {
-    font-variant-caps: all-small-caps;
-}
-
-
 .page-content {
     margin: auto;
-    max-width: 800px;
+    max-width: 700px;
+}
+
+.page h1 {
+    font-variant-caps: all-small-caps;
+    font-weight: 400;
+    text-align: center;
+}
+
+.page h2 {
+    border-bottom: 2px solid #d3cdc4;
+    padding-bottom: .3em;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.page h3 {
+    
+}
+
+.page p.intro {
+    text-indent: 50px;
 }

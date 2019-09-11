@@ -1,5 +1,9 @@
 .album {
-    margin-bottom: 50px;
+    text-align: center;
+    background: #d3cdc4;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 .album-header {
@@ -24,11 +28,11 @@
 }
 
 .album-link-container svg, .album-link-container svg * {
-    fill: #444;
+    fill: #4A3932;
 }
 
 .album-link-container svg:hover, .album-link-container svg:hover * {
-    fill: #888;
+    fill: #C7AB59;
 }
 
 
@@ -53,6 +57,10 @@
     vertical-align: top;
     width: 300px;
     font-size: 16px;
+}
+
+.album-tracklist ol {
+    margin: 0
 }
 
 .album-summary {

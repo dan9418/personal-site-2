@@ -3,8 +3,8 @@ import "./Gallery.css";
 import { useState } from "react";
 
 export interface GalleryImage {
-	name: string;
 	caption: string;
+	name: string;
 	year: number;
 	path: string;
 }
@@ -27,20 +27,19 @@ export function Gallery(props: GalleryProps) {
 	const main = props.images[index];
 
 	return (
-		<div className='gallery-content'>
-			<div className='gallery-content-name'>{main.name}<span className='gallery-content-year'>{main.year && '(' + main.year + ')'}</span></div>
-			<div className='gallery-main'>
-				<div className='gallery-main-nav'>
-					<div className='gallery-main-nav-button' onClick={() => navigateGallery(setIndex, index, -1, props.images.length)}>⯇</div>
-				</div>
-				<div className='gallery-main-image-container'>
-					<img className='gallery-main-image' src={main.path} alt={main.name} />
-				</div>
-				<div className='gallery-main-nav'>
-					<div className='gallery-main-nav-button' onClick={() => navigateGallery(setIndex, index, 1, props.images.length)}>⯈</div>
-				</div>
+		<div className='gallery'>
+			<div className='gallery-top'>
+				<span className='gallery-name'>{main.name}</span>
+				<span className='gallery-year'>{main.year && '(' + main.year + ')'}</span>
 			</div>
-			<div className='gallery-content-caption'>{main.caption + ' (' + (index + 1) + '/' + props.images.length + ')'}</div>
+			<div className='gallery-mid'>
+				<div className='gallery-nav' onClick={() => navigateGallery(setIndex, index, -1, props.images.length)}>{'<'}</div>
+				<div className='gallery-caption'>{'(' + (index + 1) + '/' + props.images.length + ')'}</div>
+				<div className='gallery-nav' onClick={() => navigateGallery(setIndex, index, 1, props.images.length)}>{'>'}</div>
+			</div>
+			<div className='gallery-bottom'>
+				<img className='gallery-image' src={main.path} alt={main.name} />
+			</div>
 		</div>
 	);
 }

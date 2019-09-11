@@ -1,13 +1,13 @@
 .category-links {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #E1E1E1;
+    height: 0;
+    position: relative;
+    top: -70px;
+    text-align: right;
 }
 
-.category-links-header {
-    font-size: 16px;
+.category-description {
     font-style: italic;
+    margin-bottom: 50px;
 }
 
 .category-links svg {
@@ -16,9 +16,9 @@
 }
 
 .category-links svg, .category-links svg * {
-    fill: #444;
+    fill: #4A3932;
 }
 
 .category-links svg:hover, .category-links svg:hover * {
-    fill: #888;
+    fill: #C7AB59;
 }

@@ -3,7 +3,7 @@
 .resume-position-header {
     padding: 10px;
     border-radius: 5px;
-    background: #DDD;
+    background: #d3cdc4;
     text-align: left;
 }
 
@@ -77,7 +77,7 @@
     min-width: 100px;
     vertical-align: top;
     margin: 10px;
-    background: #DDD;
+    background: #d3cdc4;
     border-radius: 5px;
 }
 
@@ -96,6 +96,7 @@
     margin: 10px;
     font-size: 14px;
     opacity: .9;
+    text-align: center;
 }
 
 .resume-key-skills-header {
@@ -112,5 +113,5 @@
     font-style: italic;
     display: inline-block;
     border-radius: 5px;
-    background-color: #DDD;
+    background-color: #d3cdc4;
 }
