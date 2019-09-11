@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./Gallery.css";
 import { useState } from "react";
+import { ICONS } from "../../../Common/Icon";
 
 export interface GalleryImage {
 	caption: string;
@@ -33,9 +34,9 @@ export function Gallery(props: GalleryProps) {
 				<span className='gallery-year'>{main.year && '(' + main.year + ')'}</span>
 			</div>
 			<div className='gallery-mid'>
-				<div className='gallery-nav' onClick={() => navigateGallery(setIndex, index, -1, props.images.length)}>{'<'}</div>
-				<div className='gallery-caption'>{'(' + (index + 1) + '/' + props.images.length + ')'}</div>
-				<div className='gallery-nav' onClick={() => navigateGallery(setIndex, index, 1, props.images.length)}>{'>'}</div>
+				<div className='gallery-nav' onClick={() => navigateGallery(setIndex, index, -1, props.images.length)}>{ICONS.navLeft}</div>
+				<div className='gallery-caption'>{(index + 1) + '/' + props.images.length}</div>
+				<div className='gallery-nav' onClick={() => navigateGallery(setIndex, index, 1, props.images.length)}>{ICONS.navRight}</div>
 			</div>
 			<div className='gallery-bottom'>
 				<img className='gallery-image' src={main.path} alt={main.name} />

@@ -13,7 +13,7 @@ interface AlbumCategory {
 const ALBUM_CONFIG: AlbumCategory[] = [
 	{
 		name: 'Atlas Euphoria',
-		description: `Atlas Euphoria is the moniker I use for my solo material, which incorporates elements of indie rock, folk, and jazz. My first two projects are available now for free streaming and plenty more are in the works.`,
+		description: `Atlas Euphoria is the moniker I use for my solo material, which incorporates elements of indie rock, folk, and jazz. My first two projects are available for free streaming and plenty more are in the works.`,
 		links: [
 			{
 				name: 'Bandcamp',
@@ -81,7 +81,7 @@ const ALBUM_CONFIG: AlbumCategory[] = [
 	},
 	{
 		name: 'The Vectors',
-		description: `The Vectors were my band in college, intended as a comedic dormroom exploration of the ska genre.`,
+		description: `The Vectors were my dormroom ska band in college.`,
 		links: [
 			{
 				name: 'SoundCloud',
@@ -106,7 +106,7 @@ const ALBUM_CONFIG: AlbumCategory[] = [
 				tracks: [
 					{ title: 'Peanut Butter Jam' }
 				],
-				summary: 'A one-off single and our only song recorded in a studio. Produced by Daniel Blake and Jonathan Pushkar',
+				summary: 'A one-off single (produced by Daniel Blake and Jonathan Pushkar)',
 				links: [
 					{ name: 'SoundCloud', icon: 'soundcloud', link: 'https://soundcloud.com/livingfiction/peanut-butter-jam' },
 					{ name: 'Lyrics', icon: 'lyrics', link: './docs/lyrics/peanut_butter_jam.txt' }

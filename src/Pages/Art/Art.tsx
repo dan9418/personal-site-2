@@ -288,13 +288,11 @@ export function Art(props) {
 	return (
 		<div>
 			<p className='intro'>
-				I love art in its many forms, both as a creator and a fan.
-				I enjoy drawing and photography, but I'm especially passionate about graphic design.
-				I have done freelance work for over a decade, including projects comissioned by universities and clubs in addition to all of my personal music projects and tattoos.
-				Some of my work is featured below.
+				I enjoy art as a creator and a fan.
+				I'm especially passionate about graphic design.
+				I have done freelance work for over a decade, from club t-shirts and posters to all of my personal music projects and tattoos.
+				Some of my projects are featured below.
 			</p>
-
-			<div className='italic'>(page still under construction)</div>
 
 			{getGalleries()}
 		</div>

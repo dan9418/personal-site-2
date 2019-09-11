@@ -11,6 +11,20 @@
     margin: 5px;
 }
 
+.gallery-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-mid svg:hover, .gallery-mid svg:hover * {
+    fill: #C7AB59
+}
+
+.gallery-mid svg, .gallery-mid svg * {
+    fill: #4A3932
+}
+
 .gallery-name {
     font-weight: bold;
 }
@@ -24,13 +38,15 @@
 
 .gallery-image {
     max-height: 300px;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .gallery-nav {
     display: inline-block;
     font-weight: bold;
     padding: 5px;
+    width: 15px;
+    height: 15px;
 
     -webkit-user-select: none;
     -moz-user-select: none;

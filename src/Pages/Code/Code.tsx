@@ -14,7 +14,7 @@ export function Code(props) {
 					<h3>Play What</h3>
 
 					<p>
-						Play What is a React component library and framework I developed for visualizing music theory concepts.
+						Play What is a React component library I developed for visualizing music theory concepts.
 						It provides a simple API for configuring viewer components and creating your own.
 					</p>
 
@@ -29,9 +29,9 @@ export function Code(props) {
 				<div>
 					<h3>Portfolio Site</h3>
 					<p>
-						I have been maintaining a personal website since my freshman year of college.
-						I use my site as a sandbox to learn new technologies and keep a portfolio of my projects.
-						The current iteration is powered by React, TypeScript, and pure CSS.
+						I have maintained a personal site since 2013.
+						I use this site as a sandbox to learn new technologies and keep a portfolio of my projects.
+						It is currently powered by React, TypeScript, and pure CSS.
 					</p>
 				</div>
 			</div>
@@ -41,16 +41,16 @@ export function Code(props) {
 				<div>
 					<h3>Augmented Reality Dashboard</h3>
 					<p>
-						My most recent mobile app was an
-						<span className='italic'> augmented reality dashboard</span>,
-						developed for my senior design project at Pitt.
+						I developed an
+						<span className='italic'> augmented reality dashboard</span>
+						Android app for my senior design project at Pitt.
 						It was sponsored by
 						<a className='code-link' href='https://www.eaton.com' target='_blank'>Eaton</a>
 						and won 2nd place at my department's design expo.
 					</p>
 
 					<p>
-						The app used an AR library to recognize mock electrical switchgear and retrieve its status over a wifi network.
+						The app used an AR library to recognize mock electrical switchgear and retrieve its data over a wifi network.
 					</p>
 
 					<Gallery
@@ -79,7 +79,7 @@ export function Code(props) {
 
 					<p>
 						My first mobile project was an Android application for solving boolean expressions.
-						It is no longer on the app store, but I plan to modernize it and convert it to a web app someday.
+						It's not available on the app store anymore, but I plan to modernize it and convert it to a web app someday.
 					</p>
 
 					<Gallery

@@ -11,7 +11,10 @@ function getPageLinks(props) {
 			<SidePanelLink
 				key={i}
 				active={props.activePage.id === page.id}
-				action={() => props.setPage(page)}
+				action={() => {
+					document.querySelector("#app > div.page").scrollTop = 0;
+					props.setPage(page);
+				}}
 				text={page.name}
 				icon={ICONS[page.id]}
 			/>

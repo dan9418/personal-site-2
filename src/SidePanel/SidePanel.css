@@ -136,7 +136,7 @@
 	text-align: center;
     height: 2px;
     margin: 5px;
-    background: #CCC;
+    background: #d3cdc4;
     border-radius: 2px;
 }
 
@@ -182,4 +182,8 @@
     width: 16px;
     padding: 0;
     padding-right: 5px;
+}
+
+.side-panel-info-item.location svg, .side-panel-info-item.location svg * {
+	fill: #EEE;
 }
