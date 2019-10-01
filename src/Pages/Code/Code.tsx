@@ -42,7 +42,7 @@ export function Code(props) {
 					<h3>Augmented Reality Dashboard</h3>
 					<p>
 						I developed an
-						<span className='italic'> augmented reality dashboard</span>
+						<span className='italic'> augmented reality dashboard </span>
 						Android app for my senior design project at Pitt.
 						It was sponsored by
 						<a className='code-link' href='https://www.eaton.com' target='_blank'>Eaton</a>
