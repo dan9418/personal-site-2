@@ -36,9 +36,9 @@ export function Resume(props) {
 		<div>
 			<h2>Professional Summary</h2>
 			<p>
-				I'm a full-stack web developer relocating from Pittsburgh, PA to the west coast.
-				I am seeking a position where I can apply my diverse technical background to one of my many passions, which include agriculture, environmentalism, music, fitness, and community development.
-					</p>
+				I'm a full-stack web developer recently relocated from Pittsburgh, PA to the west coast.
+				I'm actively seeking a position where I can apply my diverse technical background to one of my many passions, which include agriculture, environmentalism, healthy food, music, fitness, and community development.
+			</p>
 
 			<h2>Work Experience</h2>
 			<div>
