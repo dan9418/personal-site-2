@@ -49,11 +49,10 @@ export function Resume(props) {
 					location='Pittsburgh, PA + Vilnius, LT'
 				/>
 				<ul>
-					<li>Completed rotational program spanning 5 teams over 3 years</li>
+					<li>Implemented full-stack rewrite of computation engine for managing external CAD data, resulting in greater scalability, modularity, and schema consistency</li>
+					<li>Executed proof-of-concept for creating and processing 35 GB CAD file into Azure blob storage via API</li>
+					<li>Optimized statistics reporting queries, expanding data granularity by implementing cross-language subqueries</li>
 					<li>Selected for inaugural international program in Vilnius, Lithuania</li>
-					<li>Served many roles as a full-stack developer on various web APIs and applications</li>
-					<li>Lead major feature development from design through deployment</li>
-					<li>Employed best practices regarding testing, bug-tracking, and technology research</li>
 					<li>Worked in highly cooperative agile environments using Scrum and Kanban, both on-site and remotely</li>
 				</ul>
 				<ResumeKeySkills skills={['Web Dev', 'Feature Ownership', 'Microsoft Tech Stack']} />
@@ -92,10 +91,9 @@ export function Resume(props) {
 					location='Pittsburgh, PA'
 				/>
 				<ul>
-					<li>Graduated with 3.71 GPA and special distinction as the Outstanding Senior in departmental class</li>
-					<li>Won 2nd place at departmental senior design expo for augmented reality project</li>
-					<li>Won 1st place for freshmen computer engineering conference paper on hybrid drives</li>
-					<li>Served as Engineering Week Chairman for Engineering Student Council</li>
+					<li>3.71 GPA</li>
+					<li>Served as Freshmen Engineering-Week Chairman</li>
+					<li>Served as webmaster for Hydroponics Team and The Aquaponics Project</li>
 				</ul>
 
 
@@ -141,14 +139,21 @@ export function Resume(props) {
 					</div>
 				</div>
 
+				<h2>Awards</h2>
+				<ul>
+					<li>Graduated with special distinction as the Outstanding Senior in departmental class</li>
+					<li>Won 2nd place at departmental senior design expo for augmented reality project</li>
+					<li>Won 1st place for freshmen computer engineering conference paper on hybrid drives</li>
+					<li>Eagle Scout</li>
+				</ul>
+
 				<h2>Projects</h2>
 
 				<h3>Web Apps</h3>
 
 				<ul>
 					<li>Developed <a href='https://dan9418.github.io/play-what-sample/' target='_blank'>Play What</a>, a React library and API for visualing music theory concepts</li>
-					<li>Developed this portfolio site from scratch</li>
-					<li>Served as college webmaster for The Aquaponics Project and Sailing Club</li>
+					<li>Developed this portfolio site</li>
 				</ul>
 
 				<h3>Mobile Apps</h3>
@@ -159,11 +164,11 @@ export function Resume(props) {
 					<li>Developed several smaller apps at college hackathons</li>
 				</ul>
 
-				<h3>Controlled Environment Agriculture</h3>
+				<h3>Controlled-Environment Agriculture</h3>
 
 				<ul>
 					<li>Assisted in design and construction of several tech-supplemented hydroponic gardening systems</li>
-					<li>Investigated business potential of hydroponic produce-farming facility for college Lean LaunchPad course</li>
+					<li>Investigated business potential of hydroponic produce-farming facility for Lean LaunchPad course</li>
 				</ul>
 
 				<h3>Music</h3>
