@@ -117,3 +117,20 @@
     border-radius: 5px;
     background-color: #d3cdc4;
 }
+
+/* Skills Table */
+
+.resume-skills-table {
+    width: 100%;
+    text-align: center;
+}
+
+.resume-skills-table ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-skills-table td {
+    vertical-align: top;
+}
