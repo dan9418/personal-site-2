@@ -30,7 +30,7 @@ export function Code(props) {
 					<h3>Portfolio Site</h3>
 					<p>
 						I have maintained a personal site since 2013.
-						I use this site as a sandbox to learn new technologies and keep a portfolio of my projects.
+						I use it as a sandbox to learn new technologies and keep a portfolio of my projects.
 						It is currently powered by React, TypeScript, and pure CSS.
 					</p>
 				</div>
@@ -78,7 +78,7 @@ export function Code(props) {
 					<h3>Boolean Algebra Calculator</h3>
 
 					<p>
-						My first mobile project was an Android application for solving boolean expressions.
+						My first mobile project was an Android application for minimizing boolean expressions.
 						It's not available on the app store anymore, but I plan to modernize it and convert it to a web app someday.
 					</p>
 

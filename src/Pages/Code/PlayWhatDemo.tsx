@@ -40,9 +40,18 @@ function getSelectOptions(data: any[]) {
 	return options;
 }
 
+function getDisplayName(name: string) {
+	let displayName = name.slice(0, name.length - 1).toLowerCase();
+	return ['a', 'e', 'i', 'o', 'u'].includes(displayName.charAt(0)) ?
+		' an ' + displayName
+		:
+		' a ' + displayName;
+}
+
 export function PlayWhatDemo(props) {
 
 	const [conceptTypeIndex, setConceptTypeIndex] = useState(0);
+	const activeConceptName = PLAY_WHAT_CONCEPTS[conceptTypeIndex].name;
 	const activeConcepts = Object.values(PLAY_WHAT_CONCEPTS[conceptTypeIndex].data) as any;
 	const [conceptIntervals, setConceptIntervals] = useState(activeConcepts[0].intervals);
 
@@ -58,7 +67,7 @@ export function PlayWhatDemo(props) {
 
 			<div className='play-what-input'>
 				<div className='play-what-input-label'>
-					Choose a concept type:
+					Choose a musical concept:
 					</div>
 				<select
 					className='play-what-input-dropdown'
@@ -71,7 +80,7 @@ export function PlayWhatDemo(props) {
 
 			<div className='play-what-input'>
 				<div className='play-what-input-label'>
-					Choose a concept:
+					Choose {getDisplayName(activeConceptName)}:
 					</div>
 				<select
 					className='play-what-input-dropdown'
@@ -82,9 +91,14 @@ export function PlayWhatDemo(props) {
 				</select>
 			</div>
 
-			<KeyboardWithNotes />
+			<div>
+				<KeyboardWithNotes />
+			</div>
 
-			<FretboardWithNotes />
+			<div>
+				<FretboardWithNotes />
+			</div>
+
 		</div>
 	);
 }
